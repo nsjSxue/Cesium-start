@@ -51,6 +51,8 @@
 </script>
 ```
 
+[完整代码](https://github.com/Sogrey/Cesium-start-Example/blob/master/hello-world.html)
+
 先预览一下吧：
 
 ![](../../.vuepress/public/img/hello-world.jpg)
