@@ -1,4 +1,4 @@
-# 简介及环境配置
+# 简介及
 
 ::: tip Cesium是什么？
 Cesium ['siːzɪəm]是JavaScript开源库，通过Cesium，实现无插件的创建三维球和二维地图。它是通过WebGL技术实现图形的硬件加速，并且跨平台，跨浏览器，并提供动态数据的可视化展现。
@@ -17,7 +17,7 @@ Cesium ['siːzɪəm]是JavaScript开源库，通过Cesium，实现无插件的�
 
 IDE:[Visual Studio Code](https://code.visualstudio.com/)
 
-服务器:[live-server]([https://sogrey.github.io/Plug-in/guide.html#live-server-%E7%BC%96%E8%BE%91%E6%B5%8F%E8%A7%88html%E7%BD%91%E9%A1%B5](https://sogrey.github.io/Plug-in/guide.html#live-server-编辑浏览html网页)) (基于node)
+服务器:[live-server](https://sogrey.github.io/Plug-in/guide.html#live-server-编辑浏览html网页) (基于node)
 
 先执行
 
