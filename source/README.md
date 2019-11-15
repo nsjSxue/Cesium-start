@@ -17,7 +17,6 @@ footer: MIT License | © 2019 Sogrey
 <b>Cesium是一个快速，简单，端到端的平台，用于平铺，可视化和分析3D地理空间数据</b>
 </p>
 
-
 <p align="center">
 Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:bold">Github Pages</a>
 </p>
