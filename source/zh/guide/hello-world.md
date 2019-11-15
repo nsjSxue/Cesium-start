@@ -4,7 +4,7 @@
 
 现在我们实现第一个cesium应用-Hello world。
 
-新建一个`index.html`:
+新建一个`hello-world.html`:
 
 ``` html
 <!DOCTYPE html>
