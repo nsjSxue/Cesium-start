@@ -111,9 +111,9 @@ module.exports = {
 
 function genGuideSidebar(isZh) {
   return [{
-      title: isZh ? "快速入门" : "Getting Start",
+      title: isZh ? "Hello world" : "Hello world",
       collapsable: false,
-      children: ["", "quick-start"]
+      children: ["", "hello-world"]
     },
     {
       title: isZh ? "核心功能" : "Core",
