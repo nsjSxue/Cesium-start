@@ -22,6 +22,9 @@ sidebarDepth: 3
 - [ExamplesforCesium github](https://github.com/pasu/ExamplesforCesium)
 - [CesiumLabApkServe](https://github.com/weshmily/CesiumLabApkServe) 为CesiumLab工具下载地图,影像数据的.pak文件架设地图服务
 - [[简书]Cesium Workshop @布谷李](https://www.jianshu.com/p/f66caf4cb43f)
+- [[知乎专栏]Cesium开发笔记 @vtxf](https://zhuanlan.zhihu.com/Cesium2)
+- [[知乎]Cesium资料大全 @vtxf](https://zhuanlan.zhihu.com/p/34217817)
+- [[简书]Cesium 官方教程翻译 @Cesium实验室](https://www.jianshu.com/p/31c3b55a21eb)
 
 ## 我收藏的视频
 

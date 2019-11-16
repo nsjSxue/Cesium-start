@@ -66,6 +66,10 @@ var defaultOption = {
     creditsDisplay: false, //Displays data attributions. Almost always required!
     timeline: false, //Indicates current time and allows users to jump to a specific time using the scrubber.
     fullscreenButton: false, //Makes the Viewer fullscreen.
+    infoBox: false, //是否显示点击要素之后显示的信息
+    requestRenderMode: true, //启用请求渲染模式
+    scene3DOnly: false, //每个几何实例将只能以3D渲染以节省GPU内存
+    sceneMode: 3, //初始场景模式 1 2D模式 2 2D循环模式 3 3D模式  Cesium.SceneMode
 };
 var viewer = new Cesium.Viewer("cesiumContainer", defaultOption);
 ```
@@ -203,8 +207,6 @@ viewer.homeButton.viewModel.command.beforeExecute.addEventListener(function (e) 
 当使用特定时间时，Cesium使用该[`JulianDate`](https://cesium.com/docs/cesiumjs-ref-doc/JulianDate.html)类型，该类型存储自1月1日正午-4712（公元前4713年）以来的天数。为了提高精度，此类将日期的整数部分和日期的秒数部分存储在单独的组件中。为了安全进行算术运算并表示leap秒，该日期始终存储在国际原子时间标准中。
 
 这是我们如何设置场景时间选项的示例：
-
-复制到剪贴板。数据复制剪贴板。
 
 ```js
 // Set up clock and timeline.
