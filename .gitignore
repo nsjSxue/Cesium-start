@@ -18,4 +18,4 @@ node_modules/
 docs/
 
 #
-vuepress2pdf/files/*
+vuepress2pdf/files/*.html

@@ -111,7 +111,7 @@ module.exports = {
 
 function genGuideSidebar(isZh) {
   return [{
-      title: isZh ? "Hello world" : "Hello world",
+      title: isZh ? "快速入门" : "quick start",
       collapsable: false,
       children: ["", "hello-world"]
     },

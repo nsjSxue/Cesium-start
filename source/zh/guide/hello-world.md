@@ -1,6 +1,6 @@
 # 第一个cesium应用-Hello world
 
-前面已经下载了cesium依赖，存放在 `node_modules` 目录下，在上传github加载时似乎对于`node_modules`有隔阂，重命名为`libs`，如果你是手动下载的cesium源码或release包则不会有这样的问题。
+前面已经下载了cesium依赖，存放在 `node_modules` 目录下，本地运行没任何问题，在上传github加载时似乎对于`node_modules`有隔阂，重命名为`libs`，如果你是手动下载的cesium源码或release包则不会有这样的问题。
 
 现在我们实现第一个cesium应用-Hello world。
 
