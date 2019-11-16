@@ -12,9 +12,15 @@ sidebarDepth: 3
 - [cesium github](https://github.com/AnalyticalGraphicsInc/cesium)
 - [cesium 中文网社区](http://cesiumcn.org/)
 
+## Cesium数据格式说明文档
+
+- [Cesium CZML指南](https://link.zhihu.com/?target=https%3A//github.com/AnalyticalGraphicsInc/czml-writer/wiki/CZML-Guide)
+- [3d tiles数据格式说明](https://link.zhihu.com/?target=https%3A//github.com/AnalyticalGraphicsInc/3d-tiles)
+- [gltf格式文档](https://link.zhihu.com/?target=https%3A//github.com/KhronosGroup/glTF)
 
 
-## 其他资料
+
+## 其他教程资料
 
 - [Cesium 中文社区教程](http://cesiumcn.org/guide/index.html) [github](https://github.com/hujiulin/CesiumJS-tutorial)
 - [cesium 中文网](http://cesium.xin/) [国内快速访问](http://cesium.coinidea.com/)
@@ -24,11 +30,61 @@ sidebarDepth: 3
 - [[简书]Cesium Workshop @布谷李](https://www.jianshu.com/p/f66caf4cb43f)
 - [[知乎专栏]Cesium开发笔记 @vtxf](https://zhuanlan.zhihu.com/Cesium2)
 - [[知乎]Cesium资料大全 @vtxf](https://zhuanlan.zhihu.com/p/34217817)
+- [[知乎]Cesium API使用指南1](https://zhuanlan.zhihu.com/p/80904975)
 - [[简书]Cesium 官方教程翻译 @Cesium实验室](https://www.jianshu.com/p/31c3b55a21eb)
+- [Cesium打包命令总结](https://zhuanlan.zhihu.com/p/47588567)
+- [Cesium教程系列汇总(超图大牛作品，国内较早的深入研究教程）](https://link.zhihu.com/?target=http%3A//www.cnblogs.com/fuckgiser/p/5706842.html)
+- [Cesium教程系列汇总-网上示例](https://link.zhihu.com/?target=https%3A//pasu.github.io/ExamplesforCesium/examples/examples.html%23Primer)
+- [Cesium教程系列汇总-网上示例源码](https://link.zhihu.com/?target=https%3A//github.com/pasu/ExamplesforCesium)
+- [Cesium学习笔记汇总_cumtzheNo1_新浪博客](https://link.zhihu.com/?target=http%3A//blog.sina.com.cn/s/blog_15e866bbe0102xu2f.html)
+- [Cesium学习笔记汇总_cumtzheNo1_源码](https://link.zhihu.com/?target=https%3A//github.com/YanzheZhang/Cesium.HPUZYZ.Demo)
+- [Cesium编程入门 | cesium中文网](https://link.zhihu.com/?target=http%3A//cesium.xin/wordpress/archives/category/cesium%e7%bc%96%e7%a8%8b%e5%85%a5%e9%97%a8)
+- [Cesium编程中级 | cesium中文网](https://link.zhihu.com/?target=http%3A//cesium.xin/wordpress/archives/category/cesium%e7%bc%96%e7%a8%8b%e4%b8%ad%e7%ba%a7)
+- [Cesium快速入门(火星科技)](https://link.zhihu.com/?target=http%3A//cesium.marsgis.cn/docs/go.html%3Fid%3D11)
+- [Cesium官方教程翻译(火星科技)](https://link.zhihu.com/?target=http%3A//cesium.marsgis.cn/docs/go.html%3Fid%3D12)
+- [Cesium API文档(火星科技）](https://link.zhihu.com/?target=http%3A//cesium.marsgis.cn/docs/go.html%3Fid%3D13)
+- [三维地球开发书籍(Cesium创始人 Patrick Cozzi 早期作品)](https://link.zhihu.com/?target=http%3A//www.virtualglobebook.com/)
+- [[知乎]Cesium的拾取问题总结 @vtxf](https://zhuanlan.zhihu.com/p/44767866)
+- [[知乎]Cesium中使用Primitive API 创建平面 @vtxf](https://zhuanlan.zhihu.com/p/41862338)
+- [[知乎]Cesium开发：在平面上播放视频 @vtxf](https://zhuanlan.zhihu.com/p/41862445)
+- [[知乎]给Cesium增加自定义logo的方法 @vtxf](https://zhuanlan.zhihu.com/p/41794192)
+- [[知乎]Cesium开发中的总结1 @vtxf](https://zhuanlan.zhihu.com/p/33572024)
+- 
 
 ## 我收藏的视频
 
 - [bilibili](https://space.bilibili.com/361037941/favlist?fid=762485841&ftype=create)
+- [youku](http://list.youku.com/albumlist/show/id_52316024.html)
+
+## cesium插件
+
+- [alberto-acevedo/cesium-navigation(指北针/比例尺插件）](https://link.zhihu.com/?target=https%3A//github.com/alberto-acevedo/cesium-navigation) [live](http://larcius.github.io/cesium-navigation/)
+
+- [leforthomas/cesium-drawhelper(图形编辑插件）](https://github.com/leforthomas/cesium-drawhelper) [live](http://pad.geocento.com/DrawHelper/)
+
+- [leation/drawhelper-with-cesium-v1.41(Cesium实验室QQ群中的 李仙伟 改版的图形编辑插件)](https://link.zhihu.com/?target=https%3A//github.com/leation/drawhelper-with-cesium-v1.41)
+
+  在原[cesium-drawhelper](https://github.com/leforthomas/cesium-drawhelper)基础上，修改了DrawHelper.js部分地方
+  
+- [kaktus40/Cesium-GeoserverTerrainProvider(把geoserver作为地形服务的插件）](https://link.zhihu.com/?target=https%3A//github.com/kaktus40/Cesium-GeoserverTerrainProvider)
+
+## Cesium相关开源项目
+
+- [MikesWei/CesiumMeshVisualizer(国内大牛作品，含物理引擎、BSP、体渲染)](https://link.zhihu.com/?target=https%3A//github.com/MikesWei/CesiumMeshVisualizer)
+
+- [MikesWei/CesiumVectorTile(shp/geojson转矢量切片)](https://link.zhihu.com/?target=https%3A//github.com/MikesWei/CesiumVectorTile)
+
+- [cesium-threejs-experiment(结合Cesium和Three.js的示例)](https://link.zhihu.com/?target=https%3A//github.com/AnalyticalGraphicsInc/cesium-threejs-experiment)
+
+- [ShareQiu1994/cesium-vue(Cesium实验室QQ群中的 乘风破浪 的作品 Cesium+Webpack+Vue的项目样板)](https://link.zhihu.com/?target=https%3A//github.com/ShareQiu1994/cesium-vue)
+
+- [geo-data/cesium-terrain-server(Cesium地形服务，许久未更新)](https://link.zhihu.com/?target=https%3A//github.com/geo-data/cesium-terrain-server)
+
+- [mattshax/cesium_pnt_generator(点云数据转3dtiles)](https://link.zhihu.com/?target=https%3A//github.com/mattshax/cesium_pnt_generator)
+
+- [openlayers/ol-cesium: (OpenLayers + Cesium集成)](https://link.zhihu.com/?target=https%3A//github.com/openlayers/ol-cesium)
+
+- [NICTA/cesium-vr(Cesium支持Oculus VR headset）](https://link.zhihu.com/?target=https%3A//github.com/NICTA/cesium-vr)
 
 ## cesium & three.js
 
@@ -43,12 +99,43 @@ sidebarDepth: 3
 
 - [[tutorials]cesium-and-webpack](https://cesium.com/docs/tutorials/cesium-and-webpack/)
 
+## gltf数据处理相关
+
+- [glTF Model Converter(Cesium官方在线gltf数据转换器)](https://link.zhihu.com/?target=http%3A//52.4.31.236/convertmodel.html)
+- [KhronosGroup/glTF(gltf格式文档)](https://link.zhihu.com/?target=https%3A//github.com/KhronosGroup/glTF)
+- [AnalyticalGraphicsInc/obj2gltf(Cesium官方出品的obj转gltf工具）](https://link.zhihu.com/?target=https%3A//github.com/AnalyticalGraphicsInc/obj2gltf)
+- [AnalyticalGraphicsInc/gltf-vscode(直接在vscode上看gltf的插件)](https://link.zhihu.com/?target=https%3A//github.com/AnalyticalGraphicsInc/gltf-vscode)
+- [AnalyticalGraphicsInc/gltf-pipeline(gltf数据处理优化工具)](https://link.zhihu.com/?target=https%3A//github.com/AnalyticalGraphicsInc/gltf-pipeline)
+- [KhronosGroup/glTF-Sample-Models(glTF样例模型)](https://link.zhihu.com/?target=https%3A//github.com/KhronosGroup/glTF-Sample-Models)
+- [sketchfab(gltf模型下载)](https://link.zhihu.com/?target=https%3A//sketchfab.com/)
+- [3d max的gltf导出插件](https://link.zhihu.com/?target=https%3A//doc.babylonjs.com/resources/3dsmax_to_gltf)
+- [OpenGL官方的格式转换工具](https://link.zhihu.com/?target=https%3A//github.com/KhronosGroup/COLLADA2GLTF/)
+
+## gltf模型查看器
+
+- [glTF Viewer(Three.js的gltf模型查看器)](https://link.zhihu.com/?target=https%3A//gltf-viewer.donmccurdy.com/)
+- [BabylonJS Sandbox(Babylon出品gltf查看器)](https://link.zhihu.com/?target=http%3A//sandbox.babylonjs.com/)
+- [Clay Viewer(国内百度大牛出品的gltf查看器，效果惊艳！)](https://link.zhihu.com/?target=https%3A//pissang.github.io/clay-viewer/editor/)
+
+## shader着色器
+
+- [MDN的WebGL教程](https://link.zhihu.com/?target=https%3A//developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API/Tutorial/Getting_started_with_WebGL)
+- [stackgl/shader-school(Shader教学)](https://link.zhihu.com/?target=https%3A//github.com/stackgl/shader-school)
+- [QianMo/Game-Programmer-Study-Notes(浅墨图形学笔记）](https://link.zhihu.com/?target=https%3A//github.com/QianMo/Game-Programmer-Study-Notes)
+- [wshxbqq/GLSL-Card(着色器语言入门大全)](https://link.zhihu.com/?target=https%3A//github.com/wshxbqq/GLSL-Card)
+- [mrdoob/webgl-blendfunctions(Three.js创始人 Mr.doob 的WebGL融合工具)](https://link.zhihu.com/?target=https%3A//github.com/mrdoob/webgl-blendfunctions)
+- [Ovilia/ThreeExample.js(《Three.js 入门指南》书例代码)](https://link.zhihu.com/?target=https%3A//github.com/Ovilia/ThreeExample.js)
+- [josdirksen/threejs-cookbook(Three.js Cookbook示例源码)](https://link.zhihu.com/?target=https%3A//github.com/josdirksen/threejs-cookbook)
+
 ## 其他公司cesium产品
 
 - [MarsGIS for Cesium三维地球框架](http://cesium.marsgis.cn/) http://cesium.marsgis.cn/
   基于 Cesium 的Web三维地球客户端程序开发框架
+- [http://www.swhztech.com/](http://www.swhztech.com/)
 
 ## cesium 大牛
 
-- @韦修勇 [github](https://github.com/MikesWei)
+- [cesium团队成员](https://cesium.com/team/)
+- @vtxf [知乎](https://www.zhihu.com/people/vtxf/activities)
+- @韦修勇 [github](https://github.com/MikesWei
 - @YanzheZhang [github](https://github.com/YanzheZhang)

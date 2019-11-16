@@ -10,7 +10,6 @@ features:
   details: Build beautiful, interactive 3D applications. Fuse data and stream to any device.
 - title: Uncover insights
   details: Style, filter, query, and measure. Perform analysis that is uniquely 3D.
-footer: MIT License | © 2019 Sogrey
 ---
 
 <p align="center">
@@ -20,4 +19,10 @@ footer: MIT License | © 2019 Sogrey
 
 <p align="center">
 Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:bold">Github Pages</a>
+</p>
+
+---
+<!-- 自定义footer -->
+<p align="center">
+<a href="https://output.jsbin.com/penilap" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a>
 </p>

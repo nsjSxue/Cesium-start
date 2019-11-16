@@ -55,21 +55,24 @@ var viewer = new Cesium.Viewer("cesiumContainer");
 
 我们之前仅一行代码创建了这个场景，实际上是采用了默认配置，查看API文档[Viewer doc](https://cesium.com/docs/cesiumjs-ref-doc/Viewer.html),`VIewer`有两个参数，第一个是我们已经使用过的`container`，传入一个指定容器的id；第二个是配置，以上提到的组件均可在这配置显示与否。
 
+若要去除左下角和右上角的其他标注或按钮，直接修改option的参数：
+
 ``` js
 var defaultOption = {
-    geocoder: false, //A location search tool that flies the camera to queried location. Uses Bing Maps data by default.
-    homeButton: false, //Flies the viewer back to a default view.
-    sceneModePicker: false, //Switches between 3D, 2D and Columbus View (CV) modes.
-    baseLayerPicker: false, //Chooses the imagery and terrain to display on the globe.
-    navigationHelpButton: false, //Displays the default camera controls.
-    animation: false, //Controls the play speed for view animation.
-    creditsDisplay: false, //Displays data attributions. Almost always required!
-    timeline: false, //Indicates current time and allows users to jump to a specific time using the scrubber.
-    fullscreenButton: false, //Makes the Viewer fullscreen.
-    infoBox: false, //是否显示点击要素之后显示的信息
-    requestRenderMode: true, //启用请求渲染模式
-    scene3DOnly: false, //每个几何实例将只能以3D渲染以节省GPU内存
-    sceneMode: 3, //初始场景模式 1 2D模式 2 2D循环模式 3 3D模式  Cesium.SceneMode
+	animation:false,//左下角控制动画            
+	baseLayerPicker:false,//右上角图层选择器            
+	fullscreenButton:false,            
+	geocoder:false,//右上角搜索            
+	homeButton:false,            
+	infoBox:false,            
+	scene3DOnly:false,//仅仅显示3d,可隐藏右上角2d和3d按钮 
+	selectionoIndicatr:false,            
+	timeline:false,//最下面时间轴            
+	navigationHelpButton:false,//右上角帮助按钮 
+	navigationInstructionsInitiallyVisibl:false,
+	useDefaultRenderLoop:true,            
+	showRenderLoopErrors:true,            
+	projectionPicker:false,//投影选择器
 };
 var viewer = new Cesium.Viewer("cesiumContainer", defaultOption);
 ```
@@ -124,6 +127,139 @@ Cesium提供了多个影像图层提供者，包括：
 -  [UrlTemplateImageryProvider](https://cesiumjs.org/Cesium/Build/Documentation/UrlTemplateImageryProvider.html) - 自定义瓦片切片方案，如`//cesiumjs.org/tilesets/imagery/naturalearthii/{z}/{x}/{reverseY}.jpg`.
 
 当然，也可以通过实现[[ImageryProvider接口](https://cesiumjs.org/Cesium/Build/Documentation/ImageryProvider.html) 定义新的影像接入方式。
+
+举例，加载[GoogleEarthEnterpriseImageryProvider](https://cesium.com/docs/cesiumjs-ref-doc/GoogleEarthEnterpriseImageryProvider.html):
+
+``` js
+var geeMetadata = new GoogleEarthEnterpriseMetadata('http://www.earthenterprise.org/3d');
+var gee = new Cesium.GoogleEarthEnterpriseImageryProvider({
+    metadata : geeMetadata
+});
+
+var viewer = new Cesium.Viewer("cesiumContainer",{
+    baseLayerPicker:false,//关闭基本图层
+    imageryProvider:gee,
+});
+```
+
+加载谷歌卫星影像：
+
+``` js
+var google=new Cesium.UrlTemplateImageryProvider({
+	url:'http://www.google.cn/maps/vt?lyrs=s@800&x={x}&y={y}&z={z}',  
+	tilingScheme:new Cesium.WebMercatorTilingScheme(), 
+	minimumLevel:1,            
+	maximumLevel:20        
+}); 
+var viewer = new Cesium.Viewer("cesiumContainer",{
+    baseLayerPicker:false,//关闭基本图层
+    imageryProvider:google,
+});
+```
+
+加载arcGis:
+
+``` js
+var viewer = new Cesium.Viewer("cesiumContainer", {
+    baseLayerPicker: false, //关闭基本图层
+    imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+        url: 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+    }),
+});
+```
+
+Cesium加载全球地形图:
+
+``` js
+ var terrain=new Cesium.createWorldTerrain({           
+         requestWaterMask:true,           
+         requestVertexNormals:true       
+  });        
+ viewer.terrainProvider=terrain;//加入世界地形图
+```
+
+高德影像底图:
+
+``` js
+viewer = new Cesium.Viewer("cesiumContainer", {
+    animation: false, //是否显示动画控件
+    baseLayerPicker: false, //是否显示图层选择控件
+    geocoder: true, //是否显示地名查找控件
+    timeline: false, //是否显示时间线控件
+    sceneModePicker: true, //是否显示投影方式控件
+    navigationHelpButton: false, //是否显示帮助信息控件
+    infoBox: true, //是否显示点击要素之后显示的信息
+    imageryProvider: new Cesium.UrlTemplateImageryProvider({
+        url: "https://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}",
+        //layer: "tdtVecBasicLayer",
+        //style: "default",
+        //format: "image/png",
+        //tileMatrixSetID: "GoogleMapsCompatible",
+        //show: false
+    })
+});
+viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
+    url: "http://webst02.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scale=1&style=8",
+    //layer: "tdtAnnoLayer",
+    //style: "default",
+    //format: "image/jpeg",
+    //tileMatrixSetID: "GoogleMapsCompatible"
+}));
+```
+
+高德街道底图:
+
+``` js
+viewer = new Cesium.Viewer("cesiumContainer", {
+    animation: false, //是否显示动画控件
+    baseLayerPicker: false, //是否显示图层选择控件
+    geocoder: true, //是否显示地名查找控件
+    timeline: false, //是否显示时间线控件
+    sceneModePicker: true, //是否显示投影方式控件
+    navigationHelpButton: false, //是否显示帮助信息控件
+    infoBox: true, //是否显示点击要素之后显示的信息
+    imageryProvider: new Cesium.UrlTemplateImageryProvider({
+        url: "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}",
+        //layer: "tdtVecBasicLayer",
+        //style: "default",
+        //format: "image/png",
+        //tileMatrixSetID: "GoogleMapsCompatible",
+        //show: false
+    })
+});
+viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
+    url: "http://webst02.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scale=1&style=8",
+    //layer: "tdtAnnoLayer",
+    //style: "default",
+    //format: "image/jpeg",
+    //tileMatrixSetID: "GoogleMapsCompatible"
+}));
+```
+
+更多影响地图查看[国家地理信息公共服务平台](https://service.tianditu.gov.cn/)
+
+## 配置地形
+
+Viewer除了`imageryProvider`影响外，还有`terrainProvider`地形，默认为[EllipsoidTerrainProvider](https://cesium.com/docs/cesiumjs-ref-doc/EllipsoidTerrainProvider.html?classFilter=EllipsoidTerrainProvider)
+
+举例：
+
+``` js
+// Create Cesium World Terrain with default settings
+var viewer = new Cesium.Viewer('cesiumContainer', {
+    terrainProvider : Cesium.createWorldTerrain();
+});
+```
+
+``` js
+// Create Cesium World Terrain with water and normals.
+var viewer = new Cesium.Viewer('cesiumContainer', {
+    terrainProvider : Cesium.createWorldTerrain({
+        requestWaterMask : true,
+        requestVertexNormals : true
+    });
+});
+```
 
 ## 配置场景
 

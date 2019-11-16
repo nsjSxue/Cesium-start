@@ -122,7 +122,7 @@ function genGuideSidebar(isZh) {
     {
       title: isZh ? "核心功能" : "Core",
       collapsable: false,
-      children: ["generator"]
+      children: ["03-coordinate-system","04-camera"]
     }
   ]
 }

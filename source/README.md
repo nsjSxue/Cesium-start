@@ -10,7 +10,7 @@ features:
   details: 构建美观的交互式3D应用程序。融合数据并流到任何设备。
 - title: 发掘见解
   details: 样式，过滤，查询和度量。执行独特的3D分析。
-footer: MIT License | © 2019 Sogrey
+#footer: MIT License | © 2019 Sogrey
 ---
 
 <p align="center">
@@ -23,4 +23,10 @@ footer: MIT License | © 2019 Sogrey
 
 <p align="center">
 Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:bold">Github Pages</a>
+</p>
+
+---
+<!-- 自定义footer -->
+<p align="center">
+<a href="https://output.jsbin.com/penilap" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a>
 </p>
