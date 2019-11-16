@@ -119,7 +119,7 @@ viewer.camera.flyTo({
 
 ## 记录视角
 
-同理，想要标记某个位置和角度，下次直接进入，可以在选好的角度上按<a href="#" class="btn-gradient red mini">F12</a>进入开发者工具输入
+同理，想要标记某个位置和角度，下次直接进入，可以在选好的角度上按<a href="#记录视角" class="btn-gradient red mini">F12</a>进入开发者工具输入
 
 - `viewer.camera.heading`
 -  `viewer.camera.pitch` 
@@ -151,6 +151,22 @@ viewer.camera.flyTo({
 ```
 
 [在线预览](https://sogrey.github.io/Cesium-start-Example/examples/camera/view-beijing.html)
+
+## 设置默认视角
+
+cesium默认视角定位在美国，也就是点击`HomeButton`转向的视角，怎么修改默认视角呢？
+
+需要在**创建`Viewer`之前**执行下面代码：
+
+``` js
+//设置默认视角在中国
+var china = Cesium.Rectangle.fromDegrees(100,10,120,70);
+Cesium.Camera.DEFAULT_VIEW_RECTANGLE = china;
+
+var viewer  = new Cesium.Viewer("cesiumdiv");
+```
+
+
 
 <style>
 /**按键样式*/
