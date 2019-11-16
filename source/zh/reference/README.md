@@ -18,10 +18,10 @@ sidebarDepth: 3
 
 - [Cesium 中文社区教程](http://cesiumcn.org/guide/index.html) [github](https://github.com/hujiulin/CesiumJS-tutorial)
 - [cesium 中文网](http://cesium.xin/) [国内快速访问](http://cesium.coinidea.com/)
-- [@YanzheZhang の Cesium学习笔记](https://github.com/YanzheZhang/Cesium.HPUZYZ.Demo)
+- [Cesium学习笔记 @YanzheZhang](https://github.com/YanzheZhang/Cesium.HPUZYZ.Demo)
 - [ExamplesforCesium github](https://github.com/pasu/ExamplesforCesium)
 - [CesiumLabApkServe](https://github.com/weshmily/CesiumLabApkServe) 为CesiumLab工具下载地图,影像数据的.pak文件架设地图服务
-- https://www.jianshu.com/p/f66caf4cb43f
+- [[简书]Cesium Workshop @布谷李](https://www.jianshu.com/p/f66caf4cb43f)
 
 ## 我收藏的视频
 
@@ -30,7 +30,15 @@ sidebarDepth: 3
 ## cesium & three.js
 
 - [cesium-threejs-experiment](https://github.com/AnalyticalGraphicsInc/cesium-threejs-experiment) [live](https://analyticalgraphicsinc.github.io/cesium-threejs-experiment/public/)
-- 
+- [integrating-cesium-with-threejs](https://cesium.com/blog/2017/10/23/integrating-cesium-with-threejs/)
+
+## cesium & React
+
+- [integrating-cesium-and-react](https://cesium.com/blog/2018/03/05/integrating-cesium-and-react/)
+
+## cesium & WebPack
+
+- [[tutorials]cesium-and-webpack](https://cesium.com/docs/tutorials/cesium-and-webpack/)
 
 ## 其他公司cesium产品
 

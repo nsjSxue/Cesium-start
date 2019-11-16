@@ -113,7 +113,11 @@ function genGuideSidebar(isZh) {
   return [{
       title: isZh ? "快速入门" : "quick start",
       collapsable: false,
-      children: ["", "hello-world"]
+      children: [
+        "" /*留空的指向README.md*/ ,
+        "01-hello-world",
+        "02-Viewer-some-helpful-widgets"
+      ]
     },
     {
       title: isZh ? "核心功能" : "Core",
