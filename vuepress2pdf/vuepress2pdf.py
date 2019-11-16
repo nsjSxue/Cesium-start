@@ -147,6 +147,6 @@ class DownloadVuePress2Pdf:
         return soup.prettify(), next_span_href
 
 
-down = DownloadVuePress2Pdf("https://sogrey.github.io/VuepressBlogTemplate/zh/guide/", "VuepressBlogTemplate",
+down = DownloadVuePress2Pdf("https://sogrey.github.io/Cesium-start/zh/guide/", "Cesium入门笔记",
                             wkhtmltopdf="D:\\wkhtmltopdf\\bin\\wkhtmltopdf.exe", save_html_path="./files", save_pdf_path='./')
 down.down_all_page_to_pdf()

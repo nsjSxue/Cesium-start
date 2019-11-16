@@ -16,3 +16,6 @@ Thumbs.db
 # Node files
 node_modules/
 docs/
+
+#
+vuepress2pdf/files/*
