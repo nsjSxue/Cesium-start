@@ -317,7 +317,7 @@ viewer.scene.globe.enableLighting = true;
 要了解API的功能，请查看以下相机演示：
 
 - [相机API演示](https://sandcastle.cesium.com/?src=Camera.html&label=Tutorials)
-- [自定义相机控件演示](https://sandcastle.cesium.com/?src=Camera Tutorial.html&label=Tutorials)
+- [自定义相机控件演示](https://sandcastle.cesium.com/?src=Camera%20Tutorial.html&label=Tutorials)
 
 让我们将相机移至纽约，尝试其中一种方法。[`camera.setView()`](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html)使用`Cartesian3`和设置初始视图，使用a 和a `HeadingPitchRoll`来定位和定向：
 

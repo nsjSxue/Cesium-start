@@ -18,15 +18,10 @@ Cartesian3一些常用API:
 - [Cartesian3.distance](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.distance)
   计算两点之间的距离。
 - [Cartesian3.dot](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.dot)
-
   计算两个笛卡尔的点（标量）乘积。
-
--  [Cartesian3.cross](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.cross)
-
+- [Cartesian3.cross](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.cross)
   计算两个笛卡尔的叉（外）乘积。
-
 - [Cartesian3.normalize](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.normalize)
-
   计算提供的笛卡尔坐标系的标准化形式，归一化
 
 > 注意传入参数末尾参数result，为了优化内存使用，传入result，计算后结果赋值给该result，可复用，不传则会创建一个result。
