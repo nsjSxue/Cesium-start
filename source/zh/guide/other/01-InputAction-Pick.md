@@ -13,7 +13,7 @@
 - [拾取示例](https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/index.html?src=Picking.html&label=Showcases)
 -  [3D Tiles 对象拾取](https://sandcastle.cesium.com/index.html?src=3D%20Tiles%20Feature%20Picking.html)
 
-因为我们想实现鼠标滑过的高亮效果，首先需要创建一个鼠标事件处理器。  [`ScreenSpaceEventHandler`](https://cesiumjs.org/Cesium/Build/Documentation/ScreenSpaceEventHandler.html)是可以处理一系列的用户输入事件的处理器. [`ScreenSpaceEventHandler.setInputAction()`](/Cesium/Build/Documentation/ScreenSpaceEventHandler.html#setInputAction) 监听某类型的用户输入事件 -- [`ScreenSpaceEventType`](https://cesiumjs.org/Cesium/Build/Documentation/ScreenSpaceEventType.html)用户输入事件类型，做为一个参数传递过去。这里我们设置一个回调函数来接受鼠标移动事件:
+因为我们想实现鼠标滑过的高亮效果，首先需要创建一个鼠标事件处理器。  [`ScreenSpaceEventHandler`](https://cesiumjs.org/Cesium/Build/Documentation/ScreenSpaceEventHandler.html)是可以处理一系列的用户输入事件的处理器. [`ScreenSpaceEventHandler.setInputAction()`](https://cesiumjs.org/Cesium/Build/Documentation/ScreenSpaceEventHandler.html#setInputAction) 监听某类型的用户输入事件 -- [`ScreenSpaceEventType`](https://cesiumjs.org/Cesium/Build/Documentation/ScreenSpaceEventType.html)用户输入事件类型，做为一个参数传递过去。这里我们设置一个回调函数来接受鼠标移动事件:
 
 ``` js
 var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
