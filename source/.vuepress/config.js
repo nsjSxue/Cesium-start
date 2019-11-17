@@ -47,6 +47,10 @@ module.exports = {
             link: "/zh/guide/"
           },
           {
+            text: "Example",
+            link: "https://sogrey.github.io/Cesium-start-Example/"
+          },
+          {
             text: "参考资料",
             link: "/zh/reference/"
           },
@@ -133,6 +137,25 @@ function genGuideSidebar(isZh) {
         "10-Primitive-API"/**性能好，才是真的好 */,
         "11-Fabric"/**玩点高级 */,
         "12-ParticleSystem"/**粒子系统 */
+      ]
+    },
+    {
+      title: isZh ? "其他" : "Other",
+      collapsable: false,
+      children: [
+        "other/01-InputAction-Pick"/**鼠标交互 */,
+        "other/02-CustomBubble"/**自定义气泡 */,        
+      ]
+    },
+    {
+      title: isZh ? "遇到一些问题" : "QA",
+      collapsable: false,
+      children: [
+        "QA/01-CORS-policy"/**鼠标交互 */,
+        "QA/02-ModelDrift"/**模型漂移 */,   
+        "QA/03-BGDrift"/**底图偏移 */,   
+        
+     
       ]
     }
   ]

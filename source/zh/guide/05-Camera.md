@@ -1,15 +1,29 @@
 # 相机及视角
 
-> Camera类-去哪儿，随心所欲
+## Camera类-去哪儿，随心所欲
 
 cesium中的相机：
 
 `Cesium.Viewer.camera`:[Camera](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html)
 
+Camera常用属性：
+
+- [position](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#position) 相机在世界坐标中的位置，[direction](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#direction) 相机的观看方向，[right](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#right) 相机的朝右方向。，[up](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#up) 相机的向上方向。
+
+  ![](../../.vuepress/public/img/camera-position-driection-right-up.png)
+
+- [heading](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#heading)(朝向)、[pith](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#pitch)(俯仰) 、 [roll](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#roll)(翻滚)
+
+  ![](../../.vuepress/public/img/camera-heading-roll-pitch.png)
+  
+  图中`g`是重力方向与`Z`相反。
+
 Camera有几个常用API：
 
 - [setView(options)](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#setView) Sets the camera position, orientation and transform. 设置相机的位置、方向和变换。
 - [ flyTo(options)](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#flyTo) Flies the camera from its current position to a new position. 使相机从当前位置飞到新位置。
+- [HeadingPitchRange(heading, pitch, range) ](https://cesium.com/docs/cesiumjs-ref-doc/HeadingPitchRange.html)
+- [lookAt(target, offset)](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#lookAt)
 
 ## setView(options)
 
@@ -168,6 +182,23 @@ Cesium.Camera.DEFAULT_VIEW_RECTANGLE = china;
 var viewer  = new Cesium.Viewer("cesiumdiv");
 ```
 
+## Cartesian3和Cartographic
+
+- [Cartographic](https://cesium.com/docs/cesiumjs-ref-doc/Cartographic.html) 制图坐标（longitude，latitude，height），对应经纬度坐标，弧度制，主要用在用户接口上。方便理解、直观。
+- [Cartesian3](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html) 笛卡尔直角坐标系（x,y,z）做空间计算用
+
+坐标转换：
+
+- Cartographic -> [Cartographic.toCartesian](https://cesium.com/docs/cesiumjs-ref-doc/Cartographic.html#.toCartesian) : Cartesian3 
+- Cartesian3   -> [Cartographic.fromCartesian](https://cesium.com/docs/cesiumjs-ref-doc/Cartographic.html#.fromCartesian) : Cartographic 
+
+Cartesian3一些常用API:
+
+- [Cartesian3.clone](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.clone)   复制Cartesian3实例。
+- [Cartesian3.distance](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.distance)   计算两点之间的距离。
+- [Cartesian3.dot](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.dot)  计算两个笛卡尔的点（标量）乘积。
+- [Cartesian3.cross](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.cross)  计算两个笛卡尔的叉（外）乘积。
+- [Cartesian3.normalize](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.normalize) 笛卡尔标准化，归一化
 
 
 <style>

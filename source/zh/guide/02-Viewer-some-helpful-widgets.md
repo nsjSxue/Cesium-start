@@ -79,6 +79,28 @@ var viewer = new Cesium.Viewer("cesiumContainer", defaultOption);
 
 查看[这里](https://sogrey.github.io/Cesium-start-Example/examples/Viewer-some-helpful-widgets.html)
 
+## 去除版权信息
+
+js 方式：
+
+``` js
+viewer._cesiumWidget._creditContainer.parentNode.removeChild(viewer._cesiumWidget._creditContainer); //去掉版权信息
+```
+
+或
+
+``` js
+viewer._cesiumWidget._creditContainer.style.display = "none"; //去掉版权信息
+```
+
+css方式：
+
+``` js
+.cesium-widget-credits{
+    display:none !important;
+}
+```
+
 ## Cesium ion
 Cesium ion是一个三维数据切片和存储的平台，这里使用ion平台上存储的Sentinal-2 影像和Cesium World Terrain.
 需要访问[https://cesium.com/ion/](https://cesium.com/ion/) 注册一个免费账户，并在Access Tokens页面创建访问令牌.

@@ -139,3 +139,10 @@ sidebarDepth: 3
 - @vtxf [知乎](https://www.zhihu.com/people/vtxf/activities)
 - @韦修勇 [github](https://github.com/MikesWei
 - @YanzheZhang [github](https://github.com/YanzheZhang)
+
+---
+<!-- 自定义footer -->
+<p align="center">
+<a href="https://output.jsbin.com/penilap" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a> | 如有疑问提<a href="https://github.com/Sogrey/Cesium-start/issues/new" target="_blank">Issue</a> 
+</p>
+<br><br>
