@@ -13,6 +13,36 @@ Cesium ['siːzɪəm]是JavaScript开源库，通过Cesium，实现无插件的�
 
 开始cesium前，先下载cesium源码，可以从官方网站[下载](https://cesium.com/downloads/)也可以到[cesium github](https://github.com/AnalyticalGraphicsInc/cesium) clone。
 
+需要安装[node.js](https://nodejs.org/en/)
+
+## 编译源码
+
+js是解释型语言，本不需要编译。但cesium是由众多模块组成，编译是为了把cesium各个模块源码打包生成同一cesium.js，对于cesium的打包命令见[Cesium打包命令总结](https://zhuanlan.zhihu.com/p/47588567)。
+
+``` bash
+npm install #安装cesium开发和运行中依赖的第三方node.js包
+```
+
+``` bash
+npm run release #把cesium各个模块源码打包生成同一cesium.js，这个过程稍微久一些
+```
+
+``` bash
+npm start #开启一个本地http server
+```
+
+执行完会提示打开一个本地http地址：
+
+> Cesium development server running locally.  Connect to http://localhost:8080/
+
+其中：
+
+- [Sandcastle](http://localhost:8080/Apps/Sandcastle/index.html) [在线地址](https://sandcastle.cesium.com/) 包含众多cesium示例，开发者经常光顾
+- [Documentation](http://localhost:8080/Build/Documentation/index.html) [在线地址](https://cesium.com/docs/cesiumjs-ref-doc/) cesium API文档，开发必备
+
+
+---
+
 我这里选择基于node依赖安装，前提需要安装[node](https://nodejs.org/en/)。
 
 IDE:[Visual Studio Code](https://code.visualstudio.com/)

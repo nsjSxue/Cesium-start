@@ -115,14 +115,25 @@ function genGuideSidebar(isZh) {
       collapsable: false,
       children: [
         "" /*留空的指向README.md*/ ,
-        "01-hello-world",
-        "02-Viewer-some-helpful-widgets"
+        "01-hello-world"/**Hello world*/,
+        "02-Viewer-some-helpful-widgets" /**Viewer 以及一些有用的组件*/
       ]
     },
     {
       title: isZh ? "核心功能" : "Core",
       collapsable: false,
-      children: ["03-coordinate-system","04-camera"]
+      children: [
+        "03-coordinate-system"/**坐标系 */,
+        "04-Viewer"/**Viewer类-一切API的入口*/,
+        "05-Camera"/**Camera类-去哪儿，随心所欲 */,
+        "06-ImageryLayer"/**ImageryLayer类-影像图层，给地球换个皮肤 */,
+        "07-TerrainProvider"/**TerrainProvider类-地形，让三维表现更立体 */,
+        "08-Entity-API"/**与地球交互 */,
+        "09-Cesium3DTileset"/**让场景更细致更真实 */,
+        "10-Primitive-API"/**性能好，才是真的好 */,
+        "11-Fabric"/**玩点高级 */,
+        "12-ParticleSystem"/**粒子系统 */
+      ]
     }
   ]
 }

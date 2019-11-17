@@ -1,5 +1,7 @@
 # 相机及视角
 
+> Camera类-去哪儿，随心所欲
+
 cesium中的相机：
 
 `Cesium.Viewer.camera`:[Camera](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html)
