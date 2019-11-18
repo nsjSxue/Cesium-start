@@ -24,16 +24,15 @@
 引入cesium组件样式：
 
 ```html
-    <style>
-        @import url(libs/cesium/Build/CesiumUnminified/Widgets/widgets.css);
-
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+<style>
+    @import url(libs/cesium/Build/CesiumUnminified/Widgets/widgets.css);
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
 ```
 
 `body`标签中新建一个`div`,设置其id为`cesiumContainer`，并引入`cesium.js`:

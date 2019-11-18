@@ -1,3 +1,7 @@
+---
+sidebarDepth: 4
+---
+
 # 鼠标交互
 
 拾取技术（picking）能够根据一个屏幕上的像素位置返回三维场景中的对象信息。
@@ -41,3 +45,68 @@ viewer.screenSpaceEventHandler.setInputAction(function (movement) {
     }
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 ```
+
+
+## Cesium获取鼠标点击位置
+
+### 屏幕坐标（鼠标点击位置距离canvas左上角的像素值）
+
+通过：`movement.position`获取
+
+``` js
+var viewer = new Cesium.Viewer('cesiumContainer');
+
+var handler= new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+handler.setInputAction(function (movement) {
+     console.log(movement.position);
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+```
+
+### 世界坐标（Cartesian3）
+
+通过：[`Camera.pickEllipsoid(windowPosition, ellipsoid, result) → Cartesian3`](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#pickEllipsoid)拾取,可以获取当前点击视线与椭球面相交处的坐标，其中ellipsoid是当前地球使用的椭球对象：`viewer.scene.globe.ellipsoid`。
+
+``` js
+var viewer = new Cesium.Viewer('cesiumContainer');
+
+var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+handler.setInputAction(function (movement) {
+     var position = viewer.scene.camera.pickEllipsoid(movement.position, viewer.scene.globe.ellipsoid);
+     console.log(position);
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+```
+
+### 场景坐标
+
+通过:[`viewer.scene.pickPosition(movement.position)`](https://cesium.com/docs/cesiumjs-ref-doc/Scene.html?classFilter=scene#pickPosition)获取，根据窗口坐标，从场景的深度缓冲区中拾取相应的位置，返回笛卡尔坐标。
+
+``` js
+var viewer = new Cesium.Viewer('cesiumContainer');
+
+var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+handler.setInputAction(function (movement) {
+     var position = viewer.scene.pickPosition(movement.position);
+     console.log(position);
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+```
+
+### 地标坐标
+
+通过:[`viewer.scene.globe.pick(ray, scene, result)`](https://cesium.com/docs/cesiumjs-ref-doc/Globe.html#pick)获取，可以获取点击处地球表面的世界坐标，不包括模型、倾斜摄影表面。其中ray=viewer.camera.getPickRay(movement.position)。
+
+``` js
+var viewer = new Cesium.Viewer('cesiumContainer');
+
+var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+handler.setInputAction(function (movement) {
+     var ray=viewer.camera.getPickRay(movement.position);
+     var position = viewer.scene.globe.pick(ray, viewer.scene);
+     console.log(position);
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+```
+
+
+
+## 参考
+
+- [Cesium获取鼠标点击位置（PickPosition）](https://www.jianshu.com/p/e7e65b448eeb)
