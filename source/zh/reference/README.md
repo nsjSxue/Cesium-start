@@ -18,6 +18,7 @@ sidebarDepth: 3
 - [3d tiles数据格式说明](https://github.com/AnalyticalGraphicsInc/3d-tiles)
 - [gltf格式文档](https://github.com/KhronosGroup/glTF)
 
+
 ## 其他教程资料
 
 - [Cesium 中文社区教程](http://cesiumcn.org/guide/index.html) [github](https://github.com/hujiulin/CesiumJS-tutorial)
@@ -61,37 +62,26 @@ sidebarDepth: 3
 - [CesiumVectorTile](https://gitee.com/China_jin/CesiumVectorTile)
 - [Cesium-Examples](https://gitee.com/gdsten2net/Cesium-Examples) Cesium示例，包括3DTiles、雷达扫描、动态扩散点、渐变立体墙、渐变建筑物、视场角大小、日照分析、空间三角形、可视域分析、动画、站心坐标转换、地形开挖、方量计算、FlowLine等
 - [Cesium Development Lab](https://gitee.com/dawudcn/Cesium-Development-Lab) 基于 Cesium 可视化开发。
+- [Earth SDK 数字城市演示](http://earthsdk.com/v/last/Apps/Examples/earth-digitalCity.html)
 
 ## cesium插件
 
 - [alberto-acevedo/cesium-navigation(指北针/比例尺插件）](https://github.com/alberto-acevedo/cesium-navigation) [live](http://larcius.github.io/cesium-navigation/)
-
 - [leforthomas/cesium-drawhelper(图形编辑插件）](https://github.com/leforthomas/cesium-drawhelper) [live](http://pad.geocento.com/DrawHelper/)
-
 - [leation/drawhelper-with-cesium-v1.41(Cesium实验室QQ群中的 李仙伟 改版的图形编辑插件)](https://github.com/leation/drawhelper-with-cesium-v1.41)
-
   在原[cesium-drawhelper](https://github.com/leforthomas/cesium-drawhelper)基础上，修改了DrawHelper.js部分地方
-
-- [DrawHelperForCesium1.6.X](https://gitee.com/zzwwjjdj/DrawHelperForCesium1.6.X)
-  
+- [DrawHelperForCesium1.6.X](https://gitee.com/zzwwjjdj/DrawHelperForCesium1.6.X)  
 - [kaktus40/Cesium-GeoserverTerrainProvider(把geoserver作为地形服务的插件）](https://github.com/kaktus40/Cesium-GeoserverTerrainProvider)
 
 ## Cesium相关开源项目
 
 - [MikesWei/CesiumMeshVisualizer(国内大牛作品，含物理引擎、BSP、体渲染)](https://github.com/MikesWei/CesiumMeshVisualizer)
-
 - [MikesWei/CesiumVectorTile(shp/geojson转矢量切片)](https://github.com/MikesWei/CesiumVectorTile)
-
 - [cesium-threejs-experiment(结合Cesium和Three.js的示例)](https://github.com/AnalyticalGraphicsInc/cesium-threejs-experiment)
-
 - [ShareQiu1994/cesium-vue(Cesium实验室QQ群中的 乘风破浪 的作品 Cesium+Webpack+Vue的项目样板)](https://github.com/ShareQiu1994/cesium-vue)
-
 - [geo-data/cesium-terrain-server(Cesium地形服务，许久未更新)](https://github.com/geo-data/cesium-terrain-server)
-
 - [mattshax/cesium_pnt_generator(点云数据转3dtiles)](https://github.com/mattshax/cesium_pnt_generator)
-
 - [openlayers/ol-cesium: (OpenLayers + Cesium集成)](https://github.com/openlayers/ol-cesium)
-
 - [NICTA/cesium-vr(Cesium支持Oculus VR headset）](https://github.com/NICTA/cesium-vr)
 
 ## cesium & three.js
@@ -105,6 +95,7 @@ sidebarDepth: 3
 
 ## cesium & vue
 
+- [vue-cesium](https://zouyaoji.top/vue-cesium/#/)
 - [vue结合cesium案例](https://gitee.com/dcxm/cesium)
 - [cesium-vue](https://gitee.com/dawudcn/Cesium-Development-Lab) 基于 Cesium 可视化开发。
 - [VUE CESIUM](https://gitee.com/musicguoke/vue-cesium)
@@ -146,6 +137,7 @@ sidebarDepth: 3
 - [MarsGIS for Cesium三维地球框架](http://cesium.marsgis.cn/) http://cesium.marsgis.cn/
   基于 Cesium 的Web三维地球客户端程序开发框架
 - [http://www.swhztech.com/](http://www.swhztech.com/)
+- [SuperMap iClient3D for WebGL](http://support.supermap.com.cn:8090/webgl/examples/examples.html#layer)
 
 ## cesium 大牛
 

@@ -144,7 +144,18 @@ function genGuideSidebar(isZh) {
       collapsable: false,
       children: [
         "other/01-InputAction-Pick"/**鼠标交互 */,
-        "other/02-CustomBubble"/**自定义气泡 */,        
+        "other/02-CustomBubble"/**自定义气泡 */,  
+        "other/03-pick"/**Cesium 中的各种pick */,   
+        "other/04-height"/**Cesium 各高度的获取 */,   
+        
+      ]
+    },
+    {
+      title: isZh ? "模型转码" : "Model transcoding",
+      collapsable: false,
+      children: [
+        "transcoding/01-dae-2-gltf-bgltf"/**dae转gltf/bgltf */,
+        
       ]
     },
     {
@@ -153,9 +164,7 @@ function genGuideSidebar(isZh) {
       children: [
         "QA/01-CORS-policy"/**鼠标交互 */,
         "QA/02-ModelDrift"/**模型漂移 */,   
-        "QA/03-BGDrift"/**底图偏移 */,   
-        
-     
+        "QA/03-BGDrift"/**底图偏移 */, 
       ]
     }
   ]

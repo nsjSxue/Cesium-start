@@ -61,12 +61,12 @@ var viewer = new Cesium.Viewer("cesiumContainer");
 var defaultOption = {
 	animation:false,//左下角控制动画            
 	baseLayerPicker:false,//右上角图层选择器            
-	fullscreenButton:false,            
+	fullscreenButton:false,  //右下角全屏按钮          
 	geocoder:false,//右上角搜索            
-	homeButton:false,            
-	infoBox:false,            
-	scene3DOnly:false,//仅仅显示3d,可隐藏右上角2d和3d按钮 
-	selectionoIndicatr:false,            
+	homeButton:false, //home键，点击回到默认视角
+	infoBox:false, //点击模型不显示cesium自带的信息框
+	//scene3DOnly:false,//仅仅显示3d,可隐藏右上角2d和3d按钮 
+	selectionIndicator: false, //点击模型不显示cesium自带的绿色选中框  
 	timeline:false,//最下面时间轴            
 	navigationHelpButton:false,//右上角帮助按钮 
 	navigationInstructionsInitiallyVisibl:false,

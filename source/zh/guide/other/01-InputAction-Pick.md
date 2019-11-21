@@ -46,6 +46,8 @@ viewer.screenSpaceEventHandler.setInputAction(function (movement) {
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 ```
 
+查看[示例](https://sogrey.github.io/Cesium-start-Example/examples/InputAction-Pick/pick-position.html)
+
 
 ## Cesium获取鼠标点击位置
 
@@ -106,7 +108,55 @@ handler.setInputAction(function (movement) {
 ```
 
 
+## 限制鼠标的视图控制
+
+``` js
+// 禁用放大缩小和自由旋转视图
+viewer.scene.screenSpaceCameraController.enableZoom = false;
+viewer.scene.screenSpaceCameraController.enableTilt = false;
+```
+
+## 修改视图默认鼠标操作方式
+
+``` js
+// 修改默认的鼠标视图控制方式。
+viewer.scene.screenSpaceCameraController.zoomEventTypes = [Cesium.CameraEventType.WHEEL, Cesium.CameraEventType.PINCH];
+viewer.scene.screenSpaceCameraController.tiltEventTypes = [Cesium.CameraEventType.PINCH, Cesium.CameraEventType.RIGHT_DRAG]
+```
+
+## 添加自定义鼠标事件（1），实现点击、双击、右键点击等事件
+
+``` js
+// 添加鼠标点击事件。
+// 可以通过Cesium.ScreenSpaceEventType类实现不同的触发条件
+viewer.screenSpaceEventHandler.setInputAction(function(click) {
+    // 处理鼠标按下事件，获取鼠标当前位置
+    var feature = viewer.scene.pick(click.position);
+    //选中某模型
+    if (feature && feature instanceof Cesium.Cesium3DTileFeature) {
+        console.log(feature);
+    }
+}, Cesium.ScreenSpaceEventType.LEFT_CLICK);
+ 
+// 移除事件
+viewer.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK);
+```
+
+## 添加自定义鼠标事件（2），实现点击、双击、右键点击等事件。本质来讲和上面是一样的，只是写法不同。
+
+``` js
+// 添加事件
+// 可以通过Cesium.ScreenSpaceEventType类实现不同的触发条件
+var handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+handler.setInputAction(function(click){
+    console.log('左键单击事件：',click.position);     
+},Cesium.ScreenSpaceEventType.LEFT_CLICK);
+ 
+// 移除事件
+handler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_CLICK);
+```
 
 ## 参考
 
 - [Cesium获取鼠标点击位置（PickPosition）](https://www.jianshu.com/p/e7e65b448eeb)
+- [Cesium鼠标事件汇总](https://blog.csdn.net/mengdong_zy/article/details/90446679)
