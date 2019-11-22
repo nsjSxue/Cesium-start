@@ -20,8 +20,8 @@ Camera常用属性：
   
   盗个图：
   
-  ![](https://img-blog.csdn.net/20180128191936793?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzc3OTY0NzU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-  ![](https://img-blog.csdn.net/20180128192522430?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzc3OTY0NzU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+  ![](../../.vuepress/public/img/camera-heading-pitch-roll.jpg)
+  ![](../../.vuepress/public/img/planeheading-roll-pitch.png)
   
   盗图选自[@installing](https://blog.csdn.net/qq_37796475)：[Cesium类HeadingPitchRoll及heading、pitch、roll等参数详解](https://blog.csdn.net/qq_37796475/article/details/79188477)
 

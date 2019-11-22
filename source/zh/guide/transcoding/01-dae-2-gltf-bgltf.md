@@ -13,7 +13,6 @@ COLLADA2GLTF-bin.exe –f daePath -o gltfPath
 
 gltf的转换工具可以在[https://github.com/KhronosGroup/glTF/wiki/Converter-builds](https://github.com/KhronosGroup/glTF/wiki/Converter-builds)获取——COLLADA2GLTF-bin.exe
 
-
 参考：
 
 - [[github]COLLADA to glTF converter](https://github.com/KhronosGroup/COLLADA2GLTF)
