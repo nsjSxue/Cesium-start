@@ -6,8 +6,7 @@
     "dev": "vuepress dev source",
     "start": "npm run dev",
     "build": "vuepress build source --dest docs",
-    "d": "bash deploy.sh",
-    "deploy": "npm run build & cd docs/ & git init & git add -A & git commit -m 'deploy' & git push -f https://github.com/Sogrey/Cesium-start.git master:gh-pages",
+    "deploy": "bash deploy.sh",
     "outpdf": "cd vuepress2pdf & python vuepress2pdf.py",
     "pipInstall": "pip install requests & pip install beautifulsoup4 & pip install pdfkit"
   },

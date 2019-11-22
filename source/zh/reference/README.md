@@ -10,7 +10,8 @@ sidebarDepth: 3
 - [cesium-workshop](https://cesium.com/docs/tutorials/cesium-workshop/) [github](https://github.com/AnalyticalGraphicsInc/cesium-workshop)
 - [cesium 官方示例](https://sandcastle.cesium.com/)
 - [cesium github](https://github.com/AnalyticalGraphicsInc/cesium)
-- [cesium 中文网社区](http://cesiumcn.org/)
+- [cesium 中文网社区](http://cesiumcn.org/) [另一个](http://cesium.coinidea.com/)
+
 
 ## Cesium数据格式说明文档
 

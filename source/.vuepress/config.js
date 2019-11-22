@@ -67,6 +67,10 @@ module.exports = {
               {
                 text: "Cesium 官方文档",
                 link: "https://cesium.com/docs/"
+              },
+              {
+                text: "Cesium 官方示例",
+                link: "https://sandcastle.cesium.com/"
               }
             ]
           }
