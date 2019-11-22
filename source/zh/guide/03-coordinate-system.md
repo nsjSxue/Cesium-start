@@ -53,17 +53,24 @@ Cesium的坐标是以地心为原点，一向指向南美洲(X 经度0)，一向
 /**
  * 弧度转角度
  */
-function radian2Angle(radian) {
+function radian2Degrees(radian) {
     // 角度 = 弧度 * 180 / Math.PI;
     return radian * 180 / Math.PI;
 }
 /**
  * 角度转弧度
  */
-function angle2Radian(angle) {
+function degrees2Radian(degrees) {
     // 弧度= 角度 * Math.PI / 180;
-    return angle * Math.PI / 180;
+    return degrees * Math.PI / 180;
 }
+```
+
+``` js
+//将弧度转换为度。
+Cesium.Math.toDegrees(radian);
+//将度数转换为弧度。
+Cesium.Math.toRadians(degrees);
 ```
 
 ### 获取鼠标点在屏幕中的坐标

@@ -64,6 +64,7 @@ sidebarDepth: 3
 - [Cesium-Examples](https://gitee.com/gdsten2net/Cesium-Examples) Cesium示例，包括3DTiles、雷达扫描、动态扩散点、渐变立体墙、渐变建筑物、视场角大小、日照分析、空间三角形、可视域分析、动画、站心坐标转换、地形开挖、方量计算、FlowLine等
 - [Cesium Development Lab](https://gitee.com/dawudcn/Cesium-Development-Lab) 基于 Cesium 可视化开发。
 - [Earth SDK 数字城市演示](http://earthsdk.com/v/last/Apps/Examples/earth-digitalCity.html)
+- [测量demo](http://earthdata.wish3d.com/example_online/Examples/Measurement.html) 空间距离测量、空间面积测量、三角测量、坐标测量
 
 ## cesium插件
 

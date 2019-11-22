@@ -246,6 +246,22 @@ Cartesian3一些常用API:
 - [Cartesian3.cross](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.cross)  计算两个笛卡尔的叉（外）乘积。
 - [Cartesian3.normalize](https://cesium.com/docs/cesiumjs-ref-doc/Cartesian3.html#.normalize) 笛卡尔标准化，归一化
 
+## 获取相机朝向在水平面上的投影的方向
+
+应用场景：做第一人称漫游时，调整相机方向朝向地下，前进[camera.moveForward](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#moveForward)
+和后退[camera.moveBackward](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#moveBackward)时出现上天入地的情况，为模拟人物在水平面行走，
+这种情况是不允许的，不论相机朝天朝地都应该在水平面平行方向运动。
+
+由[camera.lookUp](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#lookUp)的源码有感而发。
+``` js
+var pitch = viewer.camera.pitch;
+viewer.camera.look(viewer.camera.right,pitch);//调整相机朝向水平
+//相机朝向在水平面上的投影的方向
+console.log(viewer.camera.direction.clone());
+viewer.camera.look(viewer.camera.right,-pitch);//恢复相机朝向为之前的方向
+```
+
+查看[示例](https://sogrey.github.io/Cesium-start-Example/examples/camera/first-person-roaming.html)
 
 ## 参考
 
