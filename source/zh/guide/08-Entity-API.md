@@ -181,7 +181,7 @@ viewer.entities属性实际上是一个EntityCollecton对象，是entity的一�
 
 - [computeAvailability() → TimeInterval](https://cesium.com/docs/cesiumjs-ref-doc/EntityCollection.html#computeAvailability) 计算集合中实体的最大可用性。如果集合包含无限可用数据和非无限数据的混合，则它将返回仅与非无限数据有关的时间间隔。如果所有数据都是无限的，则将返回无限的间隔。
 
-- [contains(entity) → Boolean](https://cesium.com/docs/cesiumjs-ref-doc/EntityCollection.html#contains) 是有包含
+- [contains(entity) → Boolean](https://cesium.com/docs/cesiumjs-ref-doc/EntityCollection.html#contains) 是否有包含
 
 - [getById(id) → Entity](https://cesium.com/docs/cesiumjs-ref-doc/EntityCollection.html#getById) 通过ID查询实体
 
@@ -227,7 +227,7 @@ primitives、groundprimitives则是表示加入三维场景中的各种三维对
 
 ## Cesium的Property机制
 
-![](../../.vuepress/public/img/Cesium-Property.jpg)
+![此处应有图](../../.vuepress/public/img/Cesium-Property.jpg)
 
 ### 参考
 

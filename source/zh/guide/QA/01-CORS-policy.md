@@ -1,6 +1,6 @@
 # 跨域问题
 
-![](../../../.vuepress/public/img/cors-policy.png)
+![此处应有图](../../../.vuepress/public/img/cors-policy.png)
 
 - 症状：  浏览器输出CORS policy错误，所加载的对象没显示
 - 问题定位：web前端开发，与cesium无关
@@ -10,4 +10,4 @@
     - 若服务端代码可改：添加跨域头
     - 若服务端不可控：添加代理服务器
 
-![](../../../.vuepress/public/img/cors-policy2.png)
+![此处应有图](../../../.vuepress/public/img/cors-policy2.png)

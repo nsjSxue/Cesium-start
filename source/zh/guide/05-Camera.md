@@ -8,20 +8,20 @@ cesium中的相机：
 
 Camera常用属性：
 
-- [position](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#position) 相机在世界坐标中的位置，[direction](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#direction) 相机的观看方向，[right](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#right) 相机的朝右方向。，[up](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#up) 相机的向上方向。
+- [position](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#position) 相机在世界坐标中的位置，[direction](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#direction) 相机的观看方向，[right](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#right) 相机的朝右方向？[up](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#up) 相机的向上方向？
 
-  ![](../../.vuepress/public/img/camera-position-driection-right-up.png)
+  ![此处应有图](../../.vuepress/public/img/camera-position-driection-right-up.png)
 
 - [heading](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#heading)(朝向)、[pith](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#pitch)(俯仰) 、 [roll](https://cesium.com/docs/cesiumjs-ref-doc/Camera.html#roll)(翻滚)
 
-  ![](../../.vuepress/public/img/camera-heading-roll-pitch.png)
+  ![此处应有图](../../.vuepress/public/img/camera-heading-roll-pitch.png)
   
   图中`g`是重力方向与`Z`相反。
   
   盗个图：
   
-  ![](../../.vuepress/public/img/camera-heading-pitch-roll.jpg)
-  ![](../../.vuepress/public/img/planeheading-roll-pitch.png)
+  ![此处应有图](../../.vuepress/public/img/camera-heading-pitch-roll.jpg)
+  ![此处应有图](../../.vuepress/public/img/planeheading-roll-pitch.png)
   
   盗图选自[@installing](https://blog.csdn.net/qq_37796475)：[Cesium类HeadingPitchRoll及heading、pitch、roll等参数详解](https://blog.csdn.net/qq_37796475/article/details/79188477)
 
@@ -149,7 +149,13 @@ viewer.camera.flyTo({
 });
 ```
 ## HeadingPitchRange(heading, pitch, range)
-在局部框架中定义航向角，俯仰角和范围。航向是从局部北向旋转，其中正角向东增加。间距是从局部xy平面旋转的角度。正俯仰角在平面上方。负俯仰角在平面下方。范围是距框架中心的距离。
+在局部框架中定义`航向角`，`俯仰角`和`范围`。
+
+- 航向是从局部北向旋转，其中正角向东增加。间距是从局部xy平面旋转的角度。
+- 正俯仰角在平面上方。负俯仰角在平面下方。
+- 范围是距框架中心的距离。
+
+参数：
 
 - `heading`	 航向角，以弧度为单位。航向方向的右侧为正
 - `pitch`	 俯仰角（以弧度为单位）。仰为正，俯为负
@@ -165,7 +171,20 @@ viewer.camera.lookAt(center, new Cesium.HeadingPitchRange(heading, pitch, range)
 ```
 
 ## lookAt(target, offset)
-使用目标和偏移量设置摄像机的位置和方向。目标必须以世界坐标给出。偏移可以是笛卡尔坐标系，也可以是以目标为中心的局部北北向上参考系中的航向/俯仰/范围。如果偏移量是笛卡尔坐标，则它是相对于转换矩阵定义的参考帧中心的偏移量。如果偏移为航向/俯仰/范围，则航向和俯仰角在变换矩阵定义的参考帧中定义。航向是从y轴到x轴的角度。间距是从xy平面开始的旋转。正俯仰角在平面下方。负俯仰角在平面上方。范围是距中心的距离。在2D模式下，必须有一个俯视图。摄像机将被放置在目标上方并向下看。目标上方的高度将是偏移量。航向将根据偏移量确定。如果无法从偏移量确定航向，则航向将为北。
+使用`目标`和`偏移量`设置摄像机的`位置`和`方向`。
+目标**必须以世界坐标给出**。
+偏移可以是`笛卡尔坐标系`，也可以是以目标为中心的局部北北向上参考系中的`航向`/`俯仰`/`范围`。
+
+如果偏移量是笛卡尔坐标，则它是相对于转换矩阵定义的参考帧中心的偏移量。
+
+如果偏移为航向/俯仰/范围，则航向和俯仰角在变换矩阵定义的参考帧中定义。
+
+航向是从y轴到x轴的角度。间距是从xy平面开始的旋转。
+
+正俯仰角在平面下方。负俯仰角在平面上方。范围是距中心的距离。
+
+在2D模式下，必须有一个俯视图。摄像机将被放置在目标上方并向下看。目标上方的高度将是`偏移量`。
+航向将根据偏移量确定。如果无法从偏移量确定航向，则航向将为北。
 
 - `target`	世界坐标中的目标位置。
 - `offset`	在局部东北向上参考系中与目标的偏移，以目标为中心。

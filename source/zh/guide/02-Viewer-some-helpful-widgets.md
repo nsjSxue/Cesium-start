@@ -2,7 +2,7 @@
 
 在前面我们创建了[第一个简单的cesium应用Hello world](01-hello-world.md),如下图：
 
-![](../../.vuepress/public/img/hello-world.jpg)
+![此处应有图](../../.vuepress/public/img/hello-world.jpg)
 
 [在线预览](https://sogrey.github.io/Cesium-start-Example/hello-world.html)
 
@@ -35,13 +35,13 @@ var viewer = new Cesium.Viewer("cesiumContainer");
 - 两个手指拖曳，相同方向- 俯仰视图(Two finger drag, same direction - Tilt view)
 - 两个手指拖曳，相反方向- 旋转视图(Two finger drag, opposite direction - Rotate view)
 
-![](../../.vuepress/public/img/help-mouse.jpg) ![](../../.vuepress/public/img/help-touch.jpg)
+![此处应有图](../../.vuepress/public/img/help-mouse.jpg) ![此处应有图](../../.vuepress/public/img/help-touch.jpg)
 
 ## Viewer的一些有用的组件
 
 观察场景我们发现除了中心一个地球仪外，还有很多有用的组件。
 
-![](https://cesium.com/images/docs/tutorials/cesium-workshop/viewerAnnotated.jpg)
+![此处应有图](https://cesium.com/images/docs/tutorials/cesium-workshop/viewerAnnotated.jpg)
 
 1. [Geocoder](https://cesium.com/docs/cesiumjs-ref-doc/Geocoder.html) 地名搜索 : 地名搜索工具，相机飞行到查询地点. 默认使用Bing Maps数据.
 2. [HomeButton](https://cesium.com/docs/cesiumjs-ref-doc/HomeButton.html) 默认视图 : 视图复位，回到默认视图.

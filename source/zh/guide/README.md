@@ -135,7 +135,7 @@ npm i cesium
 
 安装cesium依赖，完成后自动多出一个目录`node_modules`。查看`node_modules` 下 `cesium` 的目录结构：
 
-![](../../.vuepress/public/img/cesium-floder.jpg)
+![此处应有图](../../.vuepress/public/img/cesium-floder.jpg)
 
 其中
 

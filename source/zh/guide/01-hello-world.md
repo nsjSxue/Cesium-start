@@ -54,7 +54,7 @@
 
 先预览一下吧：
 
-![](../../.vuepress/public/img/hello-world.jpg)
+![此处应有图](../../.vuepress/public/img/hello-world.jpg)
 
 [在线预览](https://sogrey.github.io/Cesium-start-Example/hello-world.html)
 
