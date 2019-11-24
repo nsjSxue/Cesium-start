@@ -58,5 +58,5 @@
 
 [在线预览](https://sogrey.github.io/Cesium-start-Example/hello-world.html)
 
-一个圆润的地球引入眼帘，到此第一个应用就完成了。
+一个圆润的地球映入眼帘，到此第一个应用就完成了。
 
