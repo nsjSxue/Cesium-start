@@ -53,7 +53,7 @@ var viewer = new Cesium.Viewer("cesiumContainer");
 8. [Timeline](https://cesium.com/docs/cesiumjs-ref-doc/Timeline.html) 时间线 : 指示当前时间，允许用户跳到指定时间.
 9. [FullscreenButton](https://cesium.com/docs/cesiumjs-ref-doc/FullscreenButton.html) 全屏 : 全屏.
 
-我们之前仅一行代码创建了这个场景，实际上是采用了默认配置，查看API文档[Viewer doc](https://cesium.com/docs/cesiumjs-ref-doc/Viewer.html),`VIewer`有两个参数，第一个是我们已经使用过的`container`，传入一个指定容器的id；第二个是配置，以上提到的组件均可在这配置显示与否。
+我们之前仅一行代码创建了这个场景，实际上是采用了默认配置，查看API文档[Viewer doc](https://cesium.com/docs/cesiumjs-ref-doc/Viewer.html),`Viewer`有两个参数，第一个是我们已经使用过的`container`，传入一个指定容器的id；第二个是配置，以上提到的组件均可在这配置显示与否。
 
 若要去除左下角和右上角的其他标注或按钮，直接修改option的参数：
 
@@ -258,11 +258,11 @@ viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({
 }));
 ```
 
-更多影响地图查看[国家地理信息公共服务平台](https://service.tianditu.gov.cn/)
+更多影像地图查看[国家地理信息公共服务平台](https://service.tianditu.gov.cn/)
 
 ## 配置地形
 
-Viewer除了`imageryProvider`影响外，还有`terrainProvider`地形，默认为[EllipsoidTerrainProvider](https://cesium.com/docs/cesiumjs-ref-doc/EllipsoidTerrainProvider.html?classFilter=EllipsoidTerrainProvider)
+Viewer除了`imageryProvider`影像外，还有`terrainProvider`地形，默认为[EllipsoidTerrainProvider](https://cesium.com/docs/cesiumjs-ref-doc/EllipsoidTerrainProvider.html?classFilter=EllipsoidTerrainProvider)
 
 举例：
 
@@ -354,7 +354,7 @@ viewer.homeButton.viewModel.command.beforeExecute.addEventListener(function (e) 
 });
 ```
 
-有关基本相机控制的更多信息，请查看我们的[相机教程](https://cesium.com/docs/tutorials/camera/)。
+有关基本相机控制的更多信息，请查看官方的[相机教程](https://cesium.com/docs/tutorials/camera/)。
 
 ## 时钟控制
 
