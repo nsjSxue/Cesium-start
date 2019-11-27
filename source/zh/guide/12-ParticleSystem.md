@@ -1,3 +1,7 @@
+---
+sidebarDepth: 3
+---
+
 # ParticleSystem 粒子系统
 
 ## 什么是粒子系统？
@@ -106,6 +110,111 @@ bursts : [
 ## ParticleSystem类
 
 粒子系统管理粒子集合的更新和显示。
+
+### 粒子发射速率
+
+`emissionRate` 属性控制每秒生成多少个粒子，用来调整粒子密度。
+
+### 粒子/粒子系统的生命周期
+
+一些参数控制了粒子系统的生命周期，默认粒子系统一直运行。
+ 设置lifetime属性控制粒子的持续时间，同时需要设置loop属性为false。比如设定一个粒子系统运行5秒：
+
+```css
+particleSystem : {
+    lifetime: 5.0,
+    loop: false
+}
+```
+
+设置particleLife 属性为5.0 表示设置每个粒子的生命周期是5秒。为了每个粒子都有一个随机生命周期，我们可以设置 minimumParticleLife 和 maximumParticleLife。比如下面的代码设置了粒子生命周期在5秒和10秒之间：
+
+```css
+particleSystem : {
+    minimumParticleLife: 5.0,
+    maximumParticleLife: 10.0
+}
+```
+
+### 粒子样式
+
+#### **颜色（Color）**
+
+除了设定image属性来控制粒子的纹理外，还可以设定一个颜色值，这个值可以在粒子的生命周期内变化。
+
+下面代码使火焰粒子产生的时候是淡红色，消亡的时候是半透明黄色。
+
+```css
+particleSystem : {
+    startColor: Cesium.Color.RED.withAlpha(0.7),
+    endColor: Cesium.Color.YELLOW.withAlpha(0.3)
+}
+```
+
+**大小（Size）**
+
+通常粒子大小通过imageSize属性控制。如果想设置一个随机大小，每个粒子的宽度在minimumImageSize.x 和 maximumImageSize.x 之间随机，高度在minimumImageSize.y 和 maximumImageSize.y之间随机，单位为像素。
+
+```css
+particleSystem : {
+    minimumImageSize : new Cesium.Cartesian2(30.0, 30.0),
+    maximumImageSize : new Cesium.Cartesian2(60.0, 60.0)
+}
+```
+
+和颜色一样，粒子大小的倍率在粒子整个生命周期内，会在startScale 和 endScale属性之间插值。这个会导致你的粒子随着时间变大或者缩小。
+
+```css
+particleSystem : {
+    startScale: 1.0,
+    endScale: 4.0
+}
+```
+
+#### **运行速度Speed**
+
+发射器控制了粒子的位置和方向，速度通过speed参数或者minimumSpeed和maximumSpeed 参数来控制。
+
+```css
+particleSystem : {
+    minimumSpeed: 5.0,
+    maximumSpeed: 10.0
+}
+```
+
+### 更新回调（UpdateCallback）
+
+为了提升仿真效果，粒子系统有一个更新函数。这个是个手动更新器，比如对每个粒子模拟重力或者风力的影响，或者除了线性插值之外的颜色插值方式等等。
+每个粒子系统在仿真过程种，都会调用更新回调函数来修改粒子的属性。回调函数传过两个参数，一个是粒子本身，另一个是仿真时间步长。大部分物理效果都会修改速率向量来改变方向或者速度。下面是一个粒子响应重力的示例代码：
+
+```jsx
+var gravityScratch = new Cesium.Cartesian3();
+function applyGravity(p, dt) {
+    // 计算每个粒子的向上向量（相对地心） 
+    var position = p.position;
+    Cesium.Cartesian3.normalize(position, gravityScratch);
+    Cesium.Cartesian3.multiplyByScalar(gravityScratch, viewModel.gravity * dt, gravityScratch);
+    p.velocity = Cesium.Cartesian3.add(p.velocity, gravityScratch, p.velocity);
+}
+```
+设置粒子系统的更新函数：
+
+```css
+particleSystem: {
+    forces: applyGravity
+}
+```
+
+
+### 位置
+
+粒子系统使用两个转换[矩阵](https://cesium.com/docs/cesiumjs-ref-doc/Matrix4.html)来定位:
+
+-  `modelMatrix` : 把粒子系统从模型坐标系转到世界坐标系。
+-  `emitterModelMatrix`  : 在粒子系统的局部坐标系内变换粒子发射器。
+   我们提供两个属性也是为了方便，当然可以仅仅设置一个，把另一个设置为单位矩阵。为了学习创建这个矩阵，我们尝试把我们的粒子系统相对另一个entity。
+
+
 
 
 ## 参考

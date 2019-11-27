@@ -63,7 +63,6 @@ sidebarDepth: 3
 - [CesiumVectorTile](https://gitee.com/China_jin/CesiumVectorTile)
 - [Cesium-Examples](https://gitee.com/gdsten2net/Cesium-Examples) Cesium示例，包括3DTiles、雷达扫描、动态扩散点、渐变立体墙、渐变建筑物、视场角大小、日照分析、空间三角形、可视域分析、动画、站心坐标转换、地形开挖、方量计算、FlowLine等
 - [Cesium Development Lab](https://gitee.com/dawudcn/Cesium-Development-Lab) 基于 Cesium 可视化开发。
-- [Earth SDK 数字城市演示](http://earthsdk.com/v/last/Apps/Examples/earth-digitalCity.html)
 - [测量demo](http://earthdata.wish3d.com/example_online/Examples/Measurement.html) 空间距离测量、空间面积测量、三角测量、坐标测量
 
 ## cesium插件
@@ -101,10 +100,20 @@ sidebarDepth: 3
 - [vue结合cesium案例](https://gitee.com/dcxm/cesium)
 - [cesium-vue](https://gitee.com/dawudcn/Cesium-Development-Lab) 基于 Cesium 可视化开发。
 - [VUE CESIUM](https://gitee.com/musicguoke/vue-cesium)
+- [Vue-cli3.0+Cesium快速构建Demo](https://www.jianshu.com/p/99257bf837cc)
+
 
 ## cesium & WebPack
 
 - [[tutorials]cesium-and-webpack](https://cesium.com/docs/tutorials/cesium-and-webpack/)
+
+## EarthSDK
+
+- [[官网]EarthSDK](https://www.earthsdk.com/)
+- [[官网]文档](https://www.earthsdk.com/#/help)
+- [如何替换EarthSDK中的Cesium.js](https://www.jianshu.com/p/3a6722654798)
+- [EarthSDK示例集](http://earthsdk.com/v/last/Apps/Examples)
+- [Earth SDK 数字城市演示](http://earthsdk.com/v/last/Apps/Examples/earth-digitalCity.html)
 
 ## gltf数据处理相关
 
