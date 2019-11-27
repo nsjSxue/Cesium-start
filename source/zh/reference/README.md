@@ -51,6 +51,8 @@ sidebarDepth: 3
 - [[知乎]Cesium开发中的总结1 @vtxf](https://zhuanlan.zhihu.com/p/33572024)
 - [Cesium基础知识(一) [加载天地图影像]](https://bibichuan.github.io/2019/09/29/Cesium%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E4%B8%80/)
 - [[简书][原创.数据可视化系列之十五]把实时视频贴到cesium上 @数据秀](https://www.jianshu.com/p/d6c11c50f89c)
+- [CESIUM 实时目标跟踪最新特效教程系列3—实时波束扫描（仿圆锥形波束扫描）](http://www.freesion.com/article/920951209/)
+- [CESIUM实时目标跟踪最新特效教程系列2—粒子系统（实时发射波束跟踪目标）](http://www.freesion.com/article/641351236/)
 
 ## 我收藏的视频
 
@@ -106,6 +108,7 @@ sidebarDepth: 3
 ## cesium & WebPack
 
 - [[tutorials]cesium-and-webpack](https://cesium.com/docs/tutorials/cesium-and-webpack/)
+- [Cesium中级教程10 - CesiumJS and webpack](https://www.cnblogs.com/cesiumjs/p/10965066.html)
 
 ## EarthSDK
 
@@ -142,6 +145,10 @@ sidebarDepth: 3
 - [mrdoob/webgl-blendfunctions(Three.js创始人 Mr.doob 的WebGL融合工具)](https://github.com/mrdoob/webgl-blendfunctions)
 - [Ovilia/ThreeExample.js(《Three.js 入门指南》书例代码)](https://github.com/Ovilia/ThreeExample.js)
 - [josdirksen/threejs-cookbook(Three.js Cookbook示例源码)](https://github.com/josdirksen/threejs-cookbook)
+
+## terrain 地形
+
+- [生成 TERRAIN](http://www.freesion.com/article/136883231/)
 
 ## 其他公司cesium产品
 

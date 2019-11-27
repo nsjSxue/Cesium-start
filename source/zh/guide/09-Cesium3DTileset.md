@@ -77,3 +77,7 @@ tileset.style = new Cesium.Cesium3DTileStyle({
 });
 ```
 
+
+## 参考
+- [CESIUM3DTITLE 调整位置](http://www.freesion.com/article/6294140309/)
+- [Cesium学习笔记（五）：3D 模型](https://blog.csdn.net/UmGsoil/article/details/74572877)
