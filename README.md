@@ -17,3 +17,5 @@ npm install
 npm run dev
 ```
 
+[MIT License](https://sogrey.github.io/about/mit.html)
+

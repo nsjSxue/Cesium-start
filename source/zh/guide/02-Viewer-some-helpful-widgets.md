@@ -84,7 +84,8 @@ var viewer = new Cesium.Viewer("cesiumContainer", defaultOption);
 js 方式：
 
 ``` js
-viewer._cesiumWidget._creditContainer.parentNode.removeChild(viewer._cesiumWidget._creditContainer); //去掉版权信息
+viewer._cesiumWidget._creditContainer.parentNode.removeChild(
+    viewer._cesiumWidget._creditContainer); //去掉版权信息
 ```
 
 或

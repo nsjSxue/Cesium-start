@@ -58,7 +58,7 @@ sidebarDepth: 3
 
 - [bilibili](https://space.bilibili.com/361037941/favlist?fid=762485841&ftype=create)
 - [youku](http://list.youku.com/albumlist/show/id_52316024.html)
-
+npm 
 ## cesium 示例项目
 
 - [cesium-demo](https://gitee.com/wo535789859/cesium-demo) 学习cesium中的一些特效展示，上传上来记录学习
@@ -66,6 +66,7 @@ sidebarDepth: 3
 - [Cesium-Examples](https://gitee.com/gdsten2net/Cesium-Examples) Cesium示例，包括3DTiles、雷达扫描、动态扩散点、渐变立体墙、渐变建筑物、视场角大小、日照分析、空间三角形、可视域分析、动画、站心坐标转换、地形开挖、方量计算、FlowLine等
 - [Cesium Development Lab](https://gitee.com/dawudcn/Cesium-Development-Lab) 基于 Cesium 可视化开发。
 - [测量demo](http://earthdata.wish3d.com/example_online/Examples/Measurement.html) 空间距离测量、空间面积测量、三角测量、坐标测量
+- [ysCesium demos](https://www.yueyanshaosun.cn/ysCesium/views/main.html)
 
 ## cesium插件
 
@@ -86,6 +87,7 @@ sidebarDepth: 3
 - [mattshax/cesium_pnt_generator(点云数据转3dtiles)](https://github.com/mattshax/cesium_pnt_generator)
 - [openlayers/ol-cesium: (OpenLayers + Cesium集成)](https://github.com/openlayers/ol-cesium)
 - [NICTA/cesium-vr(Cesium支持Oculus VR headset）](https://github.com/NICTA/cesium-vr)
+- [cesiumlab/XbsjEarthUI](https://github.com/cesiumlab/XbsjEarthUI) XbsjEarthUI是基于Cesium和EarthSDK的三维GIS/BIM的UI模板，可以基于此定制自己的三维App
 
 ## cesium & three.js
 
@@ -167,6 +169,6 @@ sidebarDepth: 3
 ---
 <!-- 自定义footer -->
 <p align="center">
-<a href="https://output.jsbin.com/penilap" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a> | 如有疑问提<a href="https://github.com/Sogrey/Cesium-start/issues/new" target="_blank">Issue</a> 
+<a href="https://sogrey.github.io/about/mit.html" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a> | 如有疑问提<a href="https://github.com/Sogrey/Cesium-start/issues/new" target="_blank">Issue</a> 
 </p>
 <br><br>

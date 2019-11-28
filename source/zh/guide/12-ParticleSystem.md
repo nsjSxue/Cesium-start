@@ -351,6 +351,8 @@ scene.fog.density = 0.001;
 scene.fog.minimumBrightness = 0.8;
 ```
 
+查看[示例](https://sogrey.github.io/Cesium-start-Example/examples/ParticleSystem/ParticleSystem.html)
+
 ## 参考
 
 - [[官方]Introduction to Particle Systems](https://cesium.com/docs/tutorials/particle-systems/)
