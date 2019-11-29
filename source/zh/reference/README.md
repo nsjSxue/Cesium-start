@@ -58,7 +58,7 @@ sidebarDepth: 3
 
 - [bilibili](https://space.bilibili.com/361037941/favlist?fid=762485841&ftype=create)
 - [youku](http://list.youku.com/albumlist/show/id_52316024.html)
-npm 
+
 ## cesium 示例项目
 
 - [cesium-demo](https://gitee.com/wo535789859/cesium-demo) 学习cesium中的一些特效展示，上传上来记录学习
