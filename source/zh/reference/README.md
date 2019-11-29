@@ -93,10 +93,12 @@ sidebarDepth: 3
 
 - [cesium-threejs-experiment](https://github.com/AnalyticalGraphicsInc/cesium-threejs-experiment) [live](https://analyticalgraphicsinc.github.io/cesium-threejs-experiment/public/)
 - [integrating-cesium-with-threejs](https://cesium.com/blog/2017/10/23/integrating-cesium-with-threejs/)
+- [cesium and three.js](https://blog.csdn.net/zhishiqu/article/details/79077883)
 
 ## cesium & React
 
 - [integrating-cesium-and-react](https://cesium.com/blog/2018/03/05/integrating-cesium-and-react/)
+- [ceisum 使用demo](https://github.com/NichijouCC/cesium_demos) 使用cesium+react+ts编写
 
 ## cesium & vue
 
