@@ -231,4 +231,5 @@ primitives、groundprimitives则是表示加入三维场景中的各种三维对
 
 ### 参考
 
+- [[官方示例]Geometry and Appearances](https://sandcastle.cesium.com/index.html?src=Geometry%2520and%2520Appearances.html)
 - [Cesium的Property机制总结](https://zhuanlan.zhihu.com/p/50534090)

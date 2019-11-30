@@ -28,3 +28,6 @@
     - [PolylineOutlineMaterialProperty](https://cesium.com/docs/cesiumjs-ref-doc/PolylineOutlineMaterialProperty.html)
     - [StripeMaterialProperty](https://cesium.com/docs/cesiumjs-ref-doc/StripeMaterialProperty.html)
 
+## 参考
+
+ - [[官方示例]Materials](https://sandcastle.cesium.com/index.html?src=Materials.html)
