@@ -162,7 +162,7 @@ function genGuideSidebar(isZh) {
       collapsable: false,
       children: [
         "transcoding/01-dae-2-gltf-bgltf"/**dae转gltf/bgltf */,
-        
+        "transcoding/02-obj-2-gltf"/**obj转gltf */,
       ]
     },
     {

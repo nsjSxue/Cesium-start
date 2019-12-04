@@ -279,6 +279,42 @@ viewer.camera.look(viewer.camera.right,pitch);//调整相机朝向水平
 console.log(viewer.camera.direction.clone());
 viewer.camera.look(viewer.camera.right,-pitch);//恢复相机朝向为之前的方向
 ```
+参照`camera.look`方法：
+``` js
+/**
+ * 获取相机水平面上投影朝向
+ * @param {Cesium.Camera} camera 相机
+ * @param {Cesium.Cartesian3} result [可选]相机水平面上投影朝向,（已转为单位向量）
+ */
+function getHorizontalDirection(camera, result) {    
+    if (!Cesium.defined(camera)) {
+        console.error("camera must not be null.");
+        return null;
+    }
+
+    if (!Cesium.defined(result)) {
+        result = new Cesium.Cartesian3();
+    }
+    
+    var direction = camera.direction.clone();
+    var position = camera.position.clone();
+    var pitch = camera.pitch;
+    var right =camera.right.clone();   
+
+    var lookScratchQuaternion = new Cesium.Quaternion();
+    var lookScratchMatrix = new Cesium.Matrix3();
+
+    var turnAngle = Cesium.defined(pitch)?pitch:camera.defaultLookAmount;
+    var quaternion = Cesium.Quaternion.fromAxisAngle(right, -turnAngle, lookScratchQuaternion);
+    var rotation = Cesium.Matrix3.fromQuaternion(quaternion, lookScratchMatrix);
+
+    Cesium.Matrix3.multiplyByVector(rotation, direction, result);
+
+    Cesium.Cartesian3.normalize(result, result);
+
+    return result;
+}
+```
 
 查看[示例](https://sogrey.github.io/Cesium-start-Example/examples/camera/first-person-roaming.html)
 

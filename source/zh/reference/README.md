@@ -88,6 +88,7 @@ sidebarDepth: 3
 - [openlayers/ol-cesium: (OpenLayers + Cesium集成)](https://github.com/openlayers/ol-cesium)
 - [NICTA/cesium-vr(Cesium支持Oculus VR headset）](https://github.com/NICTA/cesium-vr)
 - [cesiumlab/XbsjEarthUI](https://github.com/cesiumlab/XbsjEarthUI) XbsjEarthUI是基于Cesium和EarthSDK的三维GIS/BIM的UI模板，可以基于此定制自己的三维App
+- [wangzhongliang/CesiumHeatmap](https://github.com/wangzhongliang/CesiumHeatmap) 热图，温度场
 
 ## cesium & three.js
 
@@ -160,6 +161,7 @@ sidebarDepth: 3
   基于 Cesium 的Web三维地球客户端程序开发框架
 - [http://www.swhztech.com/](http://www.swhztech.com/)
 - [SuperMap iClient3D for WebGL](http://support.supermap.com.cn:8090/webgl/examples/examples.html#layer)
+- [图扑软件](http://www.hightopo.com/demos/cn-index.html)
 
 ## cesium 大牛
 
