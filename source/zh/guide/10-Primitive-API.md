@@ -7,8 +7,6 @@
 
 ![](../../.vuepress/public/img/Cesium-Material.png)
 
-<iframe src="http://naotu.baidu.com/file/1cdaf5c91ff1d9eed2b26260bc845f22?token=c3a9c5824026275b" width="100%" height="500"></iframe>
-
 有段大牛分享的代码：
 
 ``` js
@@ -85,7 +83,7 @@ Cesium.Material._materialCache.addMaterial(Cesium.Material.PolylineTrailLinkType
 
 <details>
 <summary>查看代码段</summary>
-
+逗你呢
 </details>
 
 [github](https://github.com/YanzheZhang/Cesium.HPUZYZ.Demo/blob/master/Cesium1.43/MyDemos/Tools-34TrailLine.html)
