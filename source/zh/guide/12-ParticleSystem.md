@@ -79,7 +79,7 @@ new Cesium.ParticleBurst(options)
 | `minimum` | Number | `0.0`  | `可选`突发中发射的最小粒子数。                             |
 | `maximum` | Number | `50.0` | `可选`爆发中发射的最大粒子数。                             |
 
-指定一个`burst`对象数组，以在指定的时间发射粒子爆发（如上面的动画所示）。这会增加粒子系统的多样性或爆炸性。
+指定一个`burst`对象数组，以在指定的时间发射粒子爆发（[官方示例](https://sandcastle.cesium.com/?src=Particle%2520System.html)）。这会增加粒子系统的多样性或爆炸性。
 
 将此属性添加到您的中`particleSystem`。
 
