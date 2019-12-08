@@ -37,7 +37,23 @@ Cesium的坐标是以地心为原点，一向指向南美洲(X 经度0)，一向
   ``` js
   new Cesium.Cartesian3(-2457919.937615054, -4790818.832832404,3435047.293539871)
   ```
+## 鼠标拾取位置坐标
 
+### 屏幕坐标
+
+通过：`movement.position`获取。
+
+### 椭球面坐标
+
+通过`viewer.scene.camera.pickEllipsoid(movement.position, ellipsoid)`获取，可以获取当前点击视线与椭球面相交处的坐标，其中`ellipsoid`是当前地球使用的椭球对象：`viewer.scene.globe.ellipsoid`。
+
+### 场景坐标
+
+通过`viewer.scene.pickPosition(movement.position)`获取，可以获取场中任意点击处的对应的世界坐标。
+
+### 地标坐标
+
+通过`viewer.scene.globe.pick(ray,scene)`获取，可以获取点击处地球表面的世界坐标，不包括模型、倾斜摄影表面。其中`ray=viewer.camera.getPickRay(movement.position)`。
 
 ## 坐标转换
 
@@ -188,6 +204,7 @@ Cartesian3一些常用API:
 - [Cesium中的坐标的转化](https://blog.csdn.net/caozl1132/article/details/86220824)
 - [Cesium中的几种坐标和相互转换](https://blog.csdn.net/qq_34149805/article/details/78393540)
 - [Cesium.Cartesian3 和经纬度以及屏幕坐标等之间的转换](https://blog.csdn.net/u013821237/article/details/80169327)
+- [PickPosition获取鼠标点击位置方法总结](https://mp.weixin.qq.com/s?__biz=MzU1ODcyMjEwOA==&mid=2247483938&idx=1&sn=60d835cc73ebc3d2d3bc67dc9a1882c4&chksm=fc237f71cb54f6673c935934d22d4c5fb84368e829eb21a7825470d951815d8f9ec021098289&token=1964897234&lang=zh_CN#rd)
 
 
 

@@ -155,6 +155,7 @@ function genGuideSidebar(isZh) {
         "other/03-pick"/**Cesium 中的各种pick */,   
         "other/04-height"/**Cesium 各高度的获取 */,   
         "other/05-collision-detection"/** 碰撞检测*/,
+        "other/06-CesiumHeatmap"/** 热力图*/,
       ]
     },
     {

@@ -113,6 +113,7 @@ sidebarDepth: 3
 ## cesium & WebPack
 
 - [[tutorials]cesium-and-webpack](https://cesium.com/docs/tutorials/cesium-and-webpack/)
+- [cesium-webpack-example](https://github.com/AnalyticalGraphicsInc/cesium-webpack-example)
 - [Cesium中级教程10 - CesiumJS and webpack](https://www.cnblogs.com/cesiumjs/p/10965066.html)
 
 ## EarthSDK
