@@ -9,7 +9,7 @@ handler.setInputAction(function(evt) {
     var ray=viewer.camera.getPickRay(evt.position);
     var cartesian=viewer.scene.globe.pick(ray,viewer.scene);
     var cartographic=Cesium.Cartographic.fromCartesian(cartesian);
-    var height = cartographic.height的值为地形高度。
+    var height = cartographic.height//地形高度。
 }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 ```
 
@@ -21,7 +21,6 @@ handler.setInputAction(function(evt) {
 
 地形高度获取小结:如果你是在事件里获取可用a方法，如果你要是想实时获取可用b，其它情形可用c
 
- 
 
 ## 2. 模型表面高度的获取
 
