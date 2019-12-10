@@ -90,7 +90,7 @@ viewer.camera.setView({
 });
 ```
 ## setView 之 rectangle 方式
-设置目标为一个矩形区域。定位到范围参考[这里](https://blog.csdn.net/sunj92/article/details/87694110#2%E3%80%81%E5%AE%9A%E4%BD%8D%E5%88%B0%E8%8C%83%E5%9B%B4)
+设置目标为一个矩形区域:
 ``` js
 view.camera.setView({
     destination: Cesium.Rectangle.fromDegrees(0.0,20.0,10.0,30.0),//west, south, east, north
@@ -100,6 +100,21 @@ view.camera.setView({
         roll : 0
     }
 });
+```
+定位到范围参考[这里](https://blog.csdn.net/sunj92/article/details/87694110#2%E3%80%81%E5%AE%9A%E4%BD%8D%E5%88%B0%E8%8C%83%E5%9B%B4) [内链](other/03-pick.html#获取相机视野范围):
+``` js
+//视野范围
+var re = viewer.camera.computeViewRectangle();
+//返回 re=Rectangle {
+//         west: 1.900335469218777,
+//         south: 0.5968981529134573,
+//         east: 1.900355394617851,
+//         north: 0.5969145303070917}
+
+//计算经纬度
+var lon = (re. west/ Math.PI * 180+re.east/ Math.PI * 180)/2;
+var lat = (re.north/ Math.PI * 180+re.south/ Math.PI * 180)/2;
+console.log(lon,lat);
 ```
 ## flyTo(options)
 
