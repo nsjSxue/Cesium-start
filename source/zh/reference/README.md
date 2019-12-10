@@ -152,6 +152,12 @@ sidebarDepth: 3
 - [Ovilia/ThreeExample.js(《Three.js 入门指南》书例代码)](https://github.com/Ovilia/ThreeExample.js)
 - [josdirksen/threejs-cookbook(Three.js Cookbook示例源码)](https://github.com/josdirksen/threejs-cookbook)
 
+## 模型装换工具
+
+- [fanvanzh/3dtiles](https://github.com/fanvanzh/3dtiles) osgb => 3dtile,shapefile => 3dtile,fbx => 3dtile etc..
+- [KhronosGroup/COLLADA2GLTF](https://github.com/KhronosGroup/COLLADA2GLTF) dae => gltf/bgltf [传送门](../guide/transcoding/01-dae-2-gltf-bgltf.md)
+- [AnalyticalGraphicsInc/obj2gltf](https://github.com/AnalyticalGraphicsInc/obj2gltf) obj => gltf [传送门](../guide/transcoding/02-obj-2-gltf.md)
+
 ## terrain 地形
 
 - [生成 TERRAIN](http://www.freesion.com/article/136883231/)
@@ -161,8 +167,11 @@ sidebarDepth: 3
 - [MarsGIS for Cesium三维地球框架](http://cesium.marsgis.cn/) http://cesium.marsgis.cn/
   基于 Cesium 的Web三维地球客户端程序开发框架
 - [http://www.swhztech.com/](http://www.swhztech.com/)
+- [SuperMap](https://www.supermapol.com/)
+- [SuperMap Example](https://www.supermapol.com/web/scenes)
 - [SuperMap iClient3D for WebGL](http://support.supermap.com.cn:8090/webgl/examples/examples.html#layer)
 - [图扑软件](http://www.hightopo.com/demos/cn-index.html)
+- [中科新图](http://www.engine3d.com/solution/339.html)
 
 ## cesium 大牛
 
