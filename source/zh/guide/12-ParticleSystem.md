@@ -362,7 +362,7 @@ scene.fog.minimumBrightness = 0.8;
 ### 粒子销毁异常
 
 我在场景中添加了粒子`ParticleSystem`，在执行销毁动作时（[`fireSystem.destroy();`](https://cesium.com/docs/cesiumjs-ref-doc/ParticleSystem.html#destroy)）报如下错误：
-```
+``` bash
 Cesium.js:250174 An error occurred while rendering.  Rendering has stopped.
 undefined
 DeveloperError: This object was destroyed, i.e., destroy() was called.
