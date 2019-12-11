@@ -17,6 +17,7 @@ sidebarDepth: 3
 
 - [Cesium CZML指南](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki/CZML-Guide)
 - [3d tiles数据格式说明](https://github.com/AnalyticalGraphicsInc/3d-tiles)
+- [Introducing 3D Tiles](https://cesium.com/blog/2015/08/10/introducing-3d-tiles/)
 - [gltf格式文档](https://github.com/KhronosGroup/glTF)
 
 

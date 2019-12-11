@@ -357,6 +357,41 @@ scene.fog.minimumBrightness = 0.8;
 
 查看[示例](https://sogrey.github.io/Cesium-start-Example/examples/ParticleSystem/ParticleSystem.html)
 
+## 遇到问题
+
+### 粒子销毁异常
+
+我在场景中添加了粒子`ParticleSystem`，在执行销毁动作时（[`fireSystem.destroy();`](https://cesium.com/docs/cesiumjs-ref-doc/ParticleSystem.html#destroy)）报如下错误：
+```
+Cesium.js:250174 An error occurred while rendering.  Rendering has stopped.
+undefined
+DeveloperError: This object was destroyed, i.e., destroy() was called.
+Error
+    at new DeveloperError (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:82:23)
+    at ParticleSystem.throwOnDestroyed (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:29012:23)
+    at PrimitiveCollection.update (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:131007:31)
+    at updateAndRenderPrimitives (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:237258:31)
+    at executeCommandsInViewport (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:237092:17)
+    at Scene.updateAndExecuteCommands (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:236900:17)
+    at render (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:237563:19)
+    at tryAndCatchError (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:237582:17)
+    at Scene.render (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:237657:17)
+    at CesiumWidget.render (http://127.0.0.1:8080/libs/cesium/Build/CesiumUnminified/Cesium.js:250222:29)
+```
+不想使用自动销毁，因为我也不知这把火会烧多久，只有灭火的信号一到，才能去移除它，起初我是使用 `fireSystem.show=false;`不让他显示，但这并不是我想要的，想用事件去移除它，信号一到就删除它。
+
+后来找到另外一种方法，因为我是这样添加粒子的：
+``` js
+_viewer.scene.primitives.add(particleSystem);
+```
+想着 `viewer.scene.primitives => PrimitiveCollection` PrimitiveCollection 有添加方法应该也有移除的方法，不负众望，还真找到了：
+``` js
+_viewer.scene.primitives.remove(primitive) → Boolean
+```
+参考文档：[https://cesium.com/docs/cesiumjs-ref-doc/PrimitiveCollection.html?classFilter=PrimitiveCollection#remove](https://cesium.com/docs/cesiumjs-ref-doc/PrimitiveCollection.html?classFilter=PrimitiveCollection#remove)
+
+既然销毁不行就做移除操作。实测有效，对象被移除了。
+
 ## 参考
 
 - [[官方]Introduction to Particle Systems](https://cesium.com/docs/tutorials/particle-systems/)
