@@ -142,7 +142,7 @@ function genGuideSidebar(isZh) {
         "08-Entity-API"/**与地球交互 */,
         "09-Cesium3DTileset"/**让场景更细致更真实 */,
         "10-Primitive-API"/**性能好，才是真的好 */,
-        "11-Fabric"/**玩点高级 */,
+        "11-Fabric"/**玩点高级的 */,
         "12-ParticleSystem"/**粒子系统 */
       ]
     },
