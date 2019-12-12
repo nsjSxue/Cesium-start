@@ -16,11 +16,6 @@ features:
 <b>Cesium is a fast, simple, end-to-end platform for tiling, visualizing, and analyzing 3D geospatial data</b>
 </p>
 
-
-<p align="center">
-Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:bold">Github Pages</a>
-</p>
-
 ---
 ### Friend Links
 [Cesium 中文网社区](http://cesiumcn.org/)
@@ -28,7 +23,7 @@ Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:
 ---
 <!-- 自定义footer -->
 <p align="center">
-<a href="https://sogrey.github.io/about/mit.html" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a> | 如有疑问提<a href="https://github.com/Sogrey/Cesium-start/issues/new" target="_blank">Issue</a> 
+Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:bold">Github Pages</a> | <a href="https://sogrey.github.io/about/mit.html" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a> | 如有疑问提<a href="https://github.com/Sogrey/Cesium-start/issues/new" target="_blank">Issue</a> 
 </p>
 <br><br>
 
