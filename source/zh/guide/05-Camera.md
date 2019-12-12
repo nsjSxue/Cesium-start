@@ -338,5 +338,6 @@ function getHorizontalDirection(camera, result) {
 - [[官方示例]Camera Tutorial](https://sandcastle.cesium.com/index.html?src=Camera%20Tutorial.html)
 - [Cesium相机](http://liubf.com/2018/03/22/cesium%E7%9B%B8%E6%9C%BA%EF%BC%88%E4%BA%94%EF%BC%89/)
 - [Cesium中级教程3 - Camera - 相机（摄像机）](https://www.jianshu.com/p/7628d86b7675)
+- [Cesium中的相机—WebGL基础](https://blog.csdn.net/u011575168/article/details/82824438)
 - [cesium中定位方法使用](https://blog.csdn.net/pyx6119822/article/details/81208151)
 - [cesium中的定位方法比较](https://blog.csdn.net/sunj92/article/details/87694110)

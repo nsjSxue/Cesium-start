@@ -29,6 +29,26 @@ var tileset = scene.primitives.add(new Cesium.Cesium3DTileset({
 viewer.scene.primitives.add(tileset);
 viewer.flyTo(tileset);
 ```
+使用ion资源
+``` js
+// Load the NYC buildings tileset
+var city = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({ url: Cesium.IonResource.fromAssetId(3839) }));
+```
+
+我们可以通过将tileset的边界球转换成地图Cartographic，然后添加期望的偏移量并重置模型矩阵，从地面找到模型modelMatrix的当前偏移量。
+``` js
+// Adjust the tileset height so its not floating above terrain
+var heightOffset = -32;
+city.readyPromise.then(function(tileset) {
+    // Position tileset
+    var boundingSphere = tileset.boundingSphere;
+    var cartographic = Cesium.Cartographic.fromCartesian(boundingSphere.center);
+    var surface = Cesium.Cartesian3.fromRadians(cartographic.longitude, cartographic.latitude, 0.0);
+    var offset = Cesium.Cartesian3.fromRadians(cartographic.longitude, cartographic.latitude, heightOffset);
+    var translation = Cesium.Cartesian3.subtract(offset, surface, new Cesium.Cartesian3());
+    tileset.modelMatrix = Cesium.Matrix4.fromTranslation(translation);
+});
+```
 
 ### 高度调整
 
@@ -81,3 +101,4 @@ tileset.style = new Cesium.Cesium3DTileStyle({
 ## 参考
 - [CESIUM3DTITLE 调整位置](http://www.freesion.com/article/6294140309/)
 - [Cesium学习笔记（五）：3D 模型](https://blog.csdn.net/UmGsoil/article/details/74572877)
+- [[CesiumJS]Cesium入门10 - 3D Tiles](http://cesiumcn.org/topic/163.html)

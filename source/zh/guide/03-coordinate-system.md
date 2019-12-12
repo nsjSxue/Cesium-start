@@ -4,6 +4,11 @@ sidebarDepth: 5
 
 # cesium 坐标系统
 
+
+::: tip 预读
+[让人头大的坐标系和投影的相关知识探讨](https://mp.weixin.qq.com/s/89eomCxLvrbU2r-e3Laf5A)
+:::
+
 ## WGS84坐标系 和 笛卡尔空间Cartesian3直角坐标系
 
 - [WGS84](https://baike.baidu.com/item/WGS84/4380144?fr=aladdin)坐标系
