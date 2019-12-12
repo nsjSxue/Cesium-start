@@ -26,6 +26,10 @@ Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight:
 </p>
 
 ---
+### 友链
+[Cesium 中文网社区](http://cesiumcn.org/)
+
+---
 <!-- 自定义footer -->
 <p align="center">
 <a href="https://sogrey.github.io/about/mit.html" target="_blank">MIT License</a> | © 2019 <a href="https://sogrey.github.io" target="_blank">Sogrey</a> | 如有疑问提<a href="https://github.com/Sogrey/Cesium-start/issues/new" target="_blank">Issue</a> 
