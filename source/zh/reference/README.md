@@ -10,7 +10,7 @@ sidebarDepth: 3
 - [cesium-workshop](https://cesium.com/docs/tutorials/cesium-workshop/) [github](https://github.com/AnalyticalGraphicsInc/cesium-workshop)
 - [cesium 官方示例](https://sandcastle.cesium.com/)
 - [cesium github](https://github.com/AnalyticalGraphicsInc/cesium)
-- [cesium 中文网社区](http://cesiumcn.org/) [另一个](http://cesium.coinidea.com/)
+- [cesium 中文网社区](http://cesiumcn.org/) [国内域名](http://cesium.coinidea.com/)
 
 
 ## Cesium数据格式说明文档
@@ -173,6 +173,7 @@ sidebarDepth: 3
 - [SuperMap iClient3D for WebGL](http://support.supermap.com.cn:8090/webgl/examples/examples.html#layer)
 - [图扑软件](http://www.hightopo.com/demos/cn-index.html)
 - [中科新图](http://www.engine3d.com/solution/339.html)
+- [Holo3D For Web](https://forweb.gbim360.com/latest/projectsManager/static/exampleDemo.html)
 
 ## cesium 大牛
 
