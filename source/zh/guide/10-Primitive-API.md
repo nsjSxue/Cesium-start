@@ -198,6 +198,10 @@ var instance = new Cesium.GeometryInstance({
 ```
 ## Geometry 类 几何形状
 
+[Geometry doc](https://cesium.com/docs/cesiumjs-ref-doc/Geometry.html?classFilter=Geometry)
+
+具有形成顶点的属性和定义图元的可选索引数据的几何图形表示。可以将描述阴影的几何图形和外观分配给图元以进行可视化。可以从许多不同的（在许多情况下）几何形状创建性能的基元。可以使用GeometryPipeline中的函数来转换和优化几何。
+
 包含：
 - [PolygonGeometry](https://cesium.com/docs/cesiumjs-ref-doc/PolygonGeometry.html) 多边形
 - [RectangleGeometry](https://cesium.com/docs/cesiumjs-ref-doc/RectangleGeometry.html) 矩形

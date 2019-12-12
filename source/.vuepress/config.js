@@ -74,6 +74,10 @@ module.exports = {
               {
                 text: "Cesium 官方示例",
                 link: "https://sandcastle.cesium.com/"
+              },
+              {
+                text: "Cesium 中文网社区",
+                link: "http://cesiumcn.org/"
               }
             ]
           }
