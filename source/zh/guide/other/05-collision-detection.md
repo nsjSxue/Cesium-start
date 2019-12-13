@@ -26,7 +26,7 @@ console.log(widths/2,heights/2);
 
 相机开启碰撞分析：
 ``` js
-scene.screenSpaceCameraController.enableIndoorColliDetection =true;
+scene.screenSpaceCameraController.enableCollisionDetection  =true;//Default Value:  true
 ```
 
 场景 scene:
@@ -40,6 +40,10 @@ if (!Cesium.defined(pickedFeature)) {
 ```
 
 [drillPick(windowPosition, limit, width, height)](https://cesium.com/docs/cesiumjs-ref-doc/Scene.html#drillPick)
+
+https://github.com/AnalyticalGraphicsInc/cesium/blob/2461b55f72bed959ed098a7520625601e6850e6b/Source/Scene/Scene.js#L3560
+
+Scene.pickFromRay(ray, objectsToExclude, width)
 
 ## 参考
 - [Cesium3DTile.distanceToTile](https://github.com/AnalyticalGraphicsInc/cesium/blob/2461b55f72bed959ed098a7520625601e6850e6b/Source/Scene/Cesium3DTile.js#L1022-L1025)

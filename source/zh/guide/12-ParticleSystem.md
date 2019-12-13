@@ -286,6 +286,45 @@ new Cesium.ParticleSystem({
     //...
 });
 ```
+
+粒子位置除了指定在某个模型上还可以设置什么呢?
+
+- 直接提供需要的`Cesium.Matrix4`矩阵
+- 长度16的数组，其实就是上面矩阵的数组形式
+- WGS84坐标
+- `Cesium.Cartesian3`笛卡尔坐标-世界坐标
+- `Cesium.ConstantPositionProperty`
+- 场景模型
+
+``` js
+/**
+ * 计算坐标矩阵
+ * @param {*} position Array(16) or Array(3) or Entity
+ * @returns Cesium.Matrix4 4x4矩阵
+ */
+function transformPosition(position) {
+    var time = Cesium.JulianDate.now();
+    if (position instanceof Cesium.Matrix4 && position.length == 16) { //4x4位置矩阵            
+        return position;
+    } else if (position instanceof Array && position.length == 16) { //长度16的数组            
+        return Cesium.Matrix4.fromArray(position);
+    } else if (position instanceof Array && position.length == 3) { //WGS84 坐标
+        var wgs84 = new Cesium.Cartesian3(position[0], position[1], position[2]);
+        return computeWgs84Matrix(wgs84, time);
+    } else if (position instanceof Cesium.Cartesian3) { //笛卡尔坐标-世界坐标
+        return computePositionMatrix(position, time);
+    } else if (position instanceof Cesium.ConstantPositionProperty) { //模型的position属性
+        return computePositionPropertyMatrix(position, time);
+    } else { //传入模型
+        var entity = position;
+        if (!Cesium.defined(entity)) {
+            return undefined;
+        }
+        return computeModelMatrix(entity, time);
+    }
+}
+```
+
 #### 颗粒质量（mass）
 
 - [`mass`]() 以千克为单位设置最小和最大颗粒质量。默认1.0kg

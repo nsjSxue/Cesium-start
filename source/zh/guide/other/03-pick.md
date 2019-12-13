@@ -40,7 +40,22 @@ globe.pick(ray, scene);
         var pickedEntity = Cesium.defined(pick) ? pick.id : undefined; //pick.id即为entity
     }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 ```
+##
 
+``` js
+/* 根据屏幕位置获取经纬度 */
+function getCartographicByWindowPosition(windowPosition) {
+	var pick1 = new Cesium.Cartesian2(position.x,position.y);
+	var cartesian = viewer.scene.globe.pick(viewer.camera.getPickRay(pick1),viewer.scene);
+	var ellipsoid = viewer.scene.globe.ellipsoid;
+	var cartesian3 = new Cesium.Cartesian3(cartesian.x,cartesian.y,cartesian.z);
+	var cartographic = ellipsoid.cartesianToCartographic(cartesian3);
+	var lat=Cesium.Math.toDegrees(cartographic.latitude);
+	var lng=Cesium.Math.toDegrees(cartographic.longitude);
+	console.log('左键单击事件：',"lng:"+lng+", lat:"+lat);
+	return [lat,lng];
+}
+```
 ## 获取相机视野范围
 
 ``` js
