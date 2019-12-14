@@ -72,10 +72,13 @@ class DownloadVuePress2Pdf:
     def save_page_to_pdf(self, url, name):
         self.url_list_dict[name] = []
 
+        pdfPath = "{}/{}.pdf".format(self.save_pdf_path, name)
+
         if self.download_page(url, name):
             try:
+                print("写入文件:"+pdfPath)
                 pdfkit.from_file([("{}/{}-{}.html".format(self.save_html_path, name, str(i))) for i in range(len(
-                    self.url_list_dict[name]))], "{}/{}.pdf".format(self.save_pdf_path, name), options=self.options, configuration=self.config)
+                    self.url_list_dict[name]))], pdfPath, options=self.options, configuration=self.config)                
             except OSError as e:
                 pass
         return "{} download successfully".format(name)
@@ -106,6 +109,8 @@ class DownloadVuePress2Pdf:
                                       name, str(order_index))
         with open(path, 'w', encoding="utf-8") as f:
             f.write(content)
+
+        print("已下载:"+path)
 
     def get_content_and_next_url(self, content):
         soup = BeautifulSoup(content, "html.parser")

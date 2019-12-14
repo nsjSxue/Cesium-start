@@ -287,14 +287,14 @@ new Cesium.ParticleSystem({
 });
 ```
 
-粒子位置除了指定在某个模型上还可以设置什么呢?
+粒子位置除了指定在某个模型上还可以设置什么呢?`modelMatrix`接收的是个`Cesium.Matrix4`矩阵（4x4）,只要得到这样的矩阵就行：
 
 - 直接提供需要的`Cesium.Matrix4`矩阵
-- 长度16的数组，其实就是上面矩阵的数组形式
-- WGS84坐标
+- 长度16的数组，其实就是上面矩阵的数组形式（一般用于用户传参）
+- WGS84坐标（一般用于用户传参）
 - `Cesium.Cartesian3`笛卡尔坐标-世界坐标
 - `Cesium.ConstantPositionProperty`
-- 场景模型
+- 场景模型（一般用于用户传参）
 
 ``` js
 /**
@@ -400,7 +400,7 @@ scene.fog.minimumBrightness = 0.8;
 
 ### 粒子销毁异常
 
-我在场景中添加了粒子`ParticleSystem`，在执行销毁动作时（[`fireSystem.destroy();`](https://cesium.com/docs/cesiumjs-ref-doc/ParticleSystem.html#destroy)）报如下错误：
+[Cesium 版本 1.63] 我在场景中添加了粒子`ParticleSystem`，在执行销毁动作时（[`fireSystem.destroy();`](https://cesium.com/docs/cesiumjs-ref-doc/ParticleSystem.html#destroy)）报如下错误：
 ``` bash
 Cesium.js:250174 An error occurred while rendering.  Rendering has stopped.
 undefined
