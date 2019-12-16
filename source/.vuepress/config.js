@@ -154,12 +154,13 @@ function genGuideSidebar(isZh) {
       title: isZh ? "其他" : "Other",
       collapsable: false,
       children: [
-        "other/01-InputAction-Pick"/**鼠标交互 */,
+        "other/01-InputAction-Pick"/**点击交互 */,
         "other/02-CustomBubble"/**自定义气泡 */,  
         "other/03-pick"/**Cesium 中的各种pick */,   
         "other/04-height"/**Cesium 各高度的获取 */,   
         "other/05-collision-detection"/** 碰撞检测*/,
         "other/06-CesiumHeatmap"/** 热力图*/,
+        "other/07-clippingPlane.md"/** 剖切*/,
       ]
     },
     {

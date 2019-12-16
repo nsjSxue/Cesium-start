@@ -6,7 +6,8 @@ sidebarDepth: 5
 
 
 ::: tip 预读
-[让人头大的坐标系和投影的相关知识探讨](https://mp.weixin.qq.com/s/89eomCxLvrbU2r-e3Laf5A)
+- [让人头大的坐标系和投影的相关知识探讨](https://mp.weixin.qq.com/s/89eomCxLvrbU2r-e3Laf5A)
+- [常用地理坐标系及转换](https://www.jianshu.com/p/83efdd180376)
 :::
 
 ## WGS84坐标系 和 笛卡尔空间Cartesian3直角坐标系
