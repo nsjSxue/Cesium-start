@@ -202,13 +202,23 @@ viewer.camera.lookAt(center, new Cesium.HeadingPitchRange(heading, pitch, range)
 航向将根据偏移量确定。如果无法从偏移量确定航向，则航向将为北。
 
 - `target`	世界坐标中的目标位置。
-- `offset`	在局部东北向上参考系中与目标的偏移，以目标为中心。
+- `offset`	`Cartestian3`在局部东北向上参考系中与目标的偏移，以目标为中心;或`HeadingPitchRange` 航向仰俯角距离。
 
 Using a cartesian offset
 ``` js
 var center = Cesium.Cartesian3.fromDegrees(116.39, 39.9);
 viewer.camera.lookAt(center, new Cesium.Cartesian3(0.0, -4790000.0, 3930000.0));
 ```
+
+``` js
+var center = Cesium.Cartesian3.fromDegrees(-72.0, 40.0);//目标点
+var heading = Cesium.Math.toRadians(50.0);//航向角
+var pitch = Cesium.Math.toRadians(-20.0);//仰俯角
+var range = 5000.0;//距离
+view.camera.lookAt(center, new Cesium.HeadingPitchRange(heading, pitch, range));
+```
+
+> lookAt会将视角固定在设置的点上
 
 [在线预览](https://sogrey.github.io/Cesium-start-Example/examples/camera/view-beijing.html)
 
