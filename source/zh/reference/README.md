@@ -10,6 +10,7 @@ sidebarDepth: 3
 - [cesium-workshop](https://cesium.com/docs/tutorials/cesium-workshop/) [github](https://github.com/AnalyticalGraphicsInc/cesium-workshop)
 - [cesium 官方示例](https://sandcastle.cesium.com/)
 - [cesium github](https://github.com/AnalyticalGraphicsInc/cesium)
+- [cesium google forum](https://groups.google.com/forum/#!forum/cesium-dev)
 - [cesium 中文网社区](http://cesiumcn.org/) [国内域名](http://cesium.coinidea.com/)
 
 
@@ -69,6 +70,7 @@ sidebarDepth: 3
 - [测量demo](http://earthdata.wish3d.com/example_online/Examples/Measurement.html) 空间距离测量、空间面积测量、三角测量、坐标测量
 - [ysCesium demos](https://www.yueyanshaosun.cn/ysCesium/views/main.html)
 - [xuzhao123/cesium-graph](https://github.com/xuzhao123/cesium-graph) 基于cesium的拓展插件，包括材质的拓展和图形的拓展,雷达扫描
+- [HQCode/Cesium-test](https://gitee.com/HQCode/Cesium-test)
 
 ## cesium插件
 
@@ -165,6 +167,8 @@ sidebarDepth: 3
 - [fanvanzh/3dtiles](https://github.com/fanvanzh/3dtiles) osgb => 3dtile,shapefile => 3dtile,fbx => 3dtile etc..
 - [KhronosGroup/COLLADA2GLTF](https://github.com/KhronosGroup/COLLADA2GLTF) dae => gltf/bgltf [传送门](../guide/transcoding/01-dae-2-gltf-bgltf.md)
 - [AnalyticalGraphicsInc/obj2gltf](https://github.com/AnalyticalGraphicsInc/obj2gltf) obj => gltf [传送门](../guide/transcoding/02-obj-2-gltf.md)
+- [assimp/assimp](https://github.com/assimp/assimp) 官方开放资产导入库存储库。将40多种3D文件格式加载到一个统一且干净的数据结构中。http://www.assimp.org
+- [ksons/gltf-blender-importer](https://github.com/ksons/gltf-blender-importer) Blender glTF 2.0 Importer
 
 ## terrain 地形
 

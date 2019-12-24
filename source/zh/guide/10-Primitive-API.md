@@ -128,7 +128,7 @@ scene.primitives.add(new Cesium.GroundPrimitive({
 }));
 ```
 
-> 以上是官方文档上的描述，~~为毛我一句都看不懂。~~ 还不是很理解，从Three.js转过来的我，只知道要创建一个几何体(`THREE.Mesh`)，包括几何体(`THREE.Geometry`)还有材质(`THREE.Material`)才能正确渲染。
+> 以上是官方文档上的描述，~~为毛我一句都看不懂。~~ 从Three.js转过来的我，只知道要创建一个几何体(`THREE.Mesh`)，包括几何体(`THREE.Geometry`)还有材质(`THREE.Material`)才能正确渲染，按照这个思路试试看。
 
 ## GeometryInstance 类
 几何体实例化([`GeometryInstance`](https://cesium.com/docs/cesiumjs-ref-doc/GeometryInstance.html))允许将一个几何体对象放置在几个不同的位置并进行唯一着色。例如，可以对一个BoxGeometry进行多次实例化，每次使用不同的modelMatrix来更改其位置，旋转和比例。
