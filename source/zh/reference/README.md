@@ -112,6 +112,7 @@ sidebarDepth: 3
 - [cesium-vue](https://gitee.com/dawudcn/Cesium-Development-Lab) 基于 Cesium 可视化开发。
 - [VUE CESIUM](https://gitee.com/musicguoke/vue-cesium)
 - [Vue-cli3.0+Cesium快速构建Demo](https://www.jianshu.com/p/99257bf837cc)
+- [isboyjc/vue-cli-plugin-cesium](https://github.com/isboyjc/vue-cli-plugin-cesium)
 
 
 ## cesium & WebPack
