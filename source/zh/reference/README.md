@@ -71,6 +71,8 @@ sidebarDepth: 3
 - [ysCesium demos](https://www.yueyanshaosun.cn/ysCesium/views/main.html)
 - [xuzhao123/cesium-graph](https://github.com/xuzhao123/cesium-graph) 基于cesium的拓展插件，包括材质的拓展和图形的拓展,雷达扫描
 - [HQCode/Cesium-test](https://gitee.com/HQCode/Cesium-test)
+- [zhangti0708/cesiumEXP](https://github.com/zhangti0708/cesiumEXP) cesium 整合部分绘图接口
+- [younggis/Cesium-Examples](https://github.com/younggis/Cesium-Examples) Cesium示例，包括3DTiles、雷达扫描、动态扩散点、渐变立体墙、渐变建筑物、视场角大小、日照分析、空间三角形、可视域分析、动画、站心坐标转换、地形开挖、方量计算、FlowLine等
 
 ## cesium插件
 
